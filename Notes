@@ -1,0 +1,437 @@
+| Cybersecurity Reference and Learning    |
+| Journal                                 |
+| Valentina                               |
++-----------------------------------------+
+
+Table of Contents
+-----------------
+1. Navigation in Linux
+
+
+Navigation in Linux
+-------------------
+
+Commands List:
+- ls
+- cd
+- pwd
+- mkdir
+- rmdir
+
+Command Details:
+----------------
+
+- `ls`
+  - Purpose: Lists the contents of a directory.
+  - Usage: `ls` for basic listing, `ls -l` for detailed listing, `ls -a` to include hidden files.
+  - Notes: Essential for quickly viewing what's in the current directory.
+
+- `cd`
+  - Purpose: Changes the current directory.
+  - Usage: `cd [directory path]` to move to a specific directory, `cd ..` to move up one directory level, `cd` or `cd ~` to return to the home directory.
+  - Notes: Most commonly used for navigating through the filesystem.
+
+- `pwd`
+  - Purpose: Prints the current directory path.
+  - Usage: `pwd` to display the full path of the current directory.
+  - Notes: Useful for confirming your current location in the filesystem.
+
+- `mkdir`
+  - Purpose: Creates a new directory.
+  - Usage: `mkdir [directory name]` to create a new directory in the current location.
+  - Notes: Handy for organizing files into new folders.
+
+- `rmdir`
+  - Purpose: Removes a directory.
+  - Usage: `rmdir [directory name]` to delete an empty directory.
+  - Notes: Used for cleaning up and removing unused directories. Note that the directory must be empty.
+Commands: 
+
+Make folder: mkdir foldername 
+
+Make files: touch filename.txt 
+
+Put writing int file: echo “message”> filename.txt 
+
+Move files into folders: mv filename.txt foldername/ 
+
+Edit message in file: nano filename.txt 
+
+-Nano opens 
+
+-Rewrite message 
+
+-CTRL+o 
+
+-Enter 
+
+-CTRL+x 
+
+Delete files (inside folder/outside folder): rm filename.txt 
+
+Delete folders: rmdir ./foldername/ 
+Certainly! Here's a brief explanation of each of the commands you mentioned:
+
+1. **ifconfig:**
+   - Purpose: Displays information about network interfaces on your system.
+   - Usage: `ifconfig`
+   - Information Provided: IP address, MAC address, network status, and other interface-related details.
+
+2. **ip:**
+   - Purpose: A versatile command for network configuration, routing, and tunnels.
+   - Usage: `ip [options]`
+   - Information Provided: IP addresses, routing tables, network device status, etc.
+
+3. **traceroute:**
+   - Purpose: Traces the route that packets take to reach a destination.
+   - Usage: `traceroute [destination]`
+   - Information Provided: List of routers or hops along the path to the destination, showing latency for each.
+
+4. **tracepath:**
+   - Purpose: Similar to traceroute, but uses a different method to trace the route.
+   - Usage: `tracepath [destination]`
+   - Information Provided: Hops and latency like traceroute.
+
+5. **ping:**
+   - Purpose: Sends ICMP echo requests to a target to check if it's reachable.
+   - Usage: `ping [destination]`
+   - Information Provided: Round-trip time, packet loss, and other statistics.
+
+6. **netstat:**
+   - Purpose: Displays network connections, routing tables, interface statistics, masquerade connections, and multicast memberships.
+   - Usage: `netstat [options]`
+   - Information Provided: Open network connections, listening ports, routing table, etc.
+
+7. **ss:**
+   - Purpose: Similar to netstat, used to investigate sockets.
+   - Usage: `ss [options]`
+   - Information Provided: Socket information, including connections and listening ports.
+
+8. **dig:**
+   - Purpose: DNS lookup utility for querying DNS servers.
+   - Usage: `dig [domain]`
+   - Information Provided: IP addresses, DNS record details, and other DNS-related information.
+
+9. **nslookup:**
+   - Purpose: Queries DNS servers for domain information.
+   - Usage: `nslookup [domain]`
+   - Information Provided: IP addresses associated with a domain, and other DNS information.
+
+10. **route:**
+   - Purpose: Displays and manipulates the IP routing table.
+   - Usage: `route [options]`
+   - Information Provided: Routing table entries, showing how packets will be routed.
+
+11. **host:**
+    - Purpose: DNS lookup utility that is used to find the IP address and other details of a host.
+    - Usage: `host [domain]`
+    - Information Provided: IP address and other DNS-related information.
+
+12. **arp:**
+    - Purpose: Displays and modifies the ARP cache.
+    - Usage: `arp [options]`
+    - Information Provided: Mapping of IP addresses to MAC addresses in the local network.
+
+13. **iwconfig:**
+    - Purpose: Configures wireless network interfaces.
+    - Usage: `iwconfig [interface] [options]`
+    - Information Provided: Configuration details of wireless interfaces.
+
+14. **hostname:**
+    - Purpose: Displays or sets the system's hostname.
+    - Usage: `hostname [options]`
+    - Information Provided: Current system hostname.
+
+15. **curl or wget:**
+    - Purpose: Command-line tools for transferring data with URLs.
+    - Usage: `curl [options] [URL]` or `wget [options] [URL]`
+    - Information Provided: Downloads content from the specified URL.
+
+16. **mtr:**
+    - Purpose: Combines the functionality of ping and traceroute, providing both statistics and the route.
+    - Usage: `mtr [destination]`
+    - Information Provided: Continuous ping results and traceroute information.
+
+17. **whois:**
+    - Purpose: Retrieves information about a domain or IP address from WHOIS databases.
+    - Usage: `whois [domain or IP]`
+    - Information Provided: Registration details, contact information, and other domain-related details.
+
+18. **ifplugstatus:**
+    - Purpose: Checks the link status of network interfaces.
+    - Usage: `ifplugstatus [interface]`
+    - Information Provided: Indicates if the network cable is plugged in or not.
+
+19. **iftop:**
+    - Purpose: Displays a list of network connections and their bandwidth usage.
+    - Usage: `iftop [options]`
+    - Information Provided: Real-time network bandwidth usage.
+
+20. **tcpdump:**
+    - Purpose: Captures and analyzes network packets.
+    - Usage: `tcpdump [options]`
+    - Information Provided: Captured packet data for network analysis and troubleshooting.
+
+
+
+
+1. **IP address (IPv4):**
+   - Purpose: Identifies a unique device on a network using a 32-bit numeric address.
+   - Example: 192.168.1.1
+
+2. **Subnet Masks:**
+   - Purpose: Used to divide an IP address into network and host portions.
+   - Example: 255.255.255.0 in CIDR notation would be /24.
+
+3. **Gateway:**
+   - Purpose: A network node that connects different networks, allowing communication between them.
+   - Example: The router's IP address in a local network.
+
+4. **DNS (Domain Name System):**
+   - Purpose: Translates domain names into IP addresses, making it easier for users to remember and access websites.
+   - Example: Resolves "www.example.com" to an IP address.
+
+5. **Network Switch:**
+   - Purpose: A device that connects devices within a local area network (LAN) and uses MAC addresses to forward data to the correct device.
+   - Function: Efficiently manages traffic by creating a dedicated path between two devices.
+
+6. **Network Router:**
+   - Purpose: Connects different networks and routes data between them based on IP addresses.
+   - Function: Determines the optimal path for data packets to reach their destination.
+
+7. **Access Points:**
+   - Purpose: Devices that allow wireless devices to connect to a wired network using Wi-Fi.
+   - Example: Wi-Fi routers often have integrated access points.
+
+8. **MAC Address:**
+   - Purpose: A unique identifier assigned to network interfaces for communication on a physical network.
+   - Example: 00:1A:2B:3C:4D:5E
+
+9. **Ports in Network Addressing:**
+   - Purpose: Logical endpoints for communication, used to distinguish between different services or processes on the same device.
+   - Example: Port 80 for HTTP, Port 22 for SSH.
+
+10. **Types of Networks:**
+    - **WAN (Wide Area Network):** Spans a large geographical area, connecting LANs and other networks.
+    - **LAN (Local Area Network):** Limited to a small geographic area, such as a single building or campus.
+    - **PAN (Personal Area Network):** Covers a very small area, typically within the range of an individual person.
+    - **MAN (Metropolitan Area Network):** Larger than a LAN but smaller than a WAN, covering a city or large campus.
+    - **VPN (Virtual Private Network):** Uses encryption and tunneling to create a secure connection over the internet, often used for remote access.
+
+
+***Git commands***
+
+Initialize Git tracking: git init
+Check repo status: git status
+Add files to staging area:[git add 'file']
+      Adding all remaining files: git add.
+Commit with description: git commit -m "Description example"
+See commit history: git log
+Switching branches: git checkout 'branch name'
+      Create and switch to a new branch: git checkout -b 'branch name'
+Merge: git merge
+To see all commit history in graph form: git log --oneline --graph --all
+Revert file: git restore 'filename.txt'
+      If unavailable: git checkout -- 'filename.txt'
+To remove tracking:
+      echo "filename.txt" >> .gitignore
+      Remove from repo:git rm --cached 'filename.txt'
+      Commit:[git add .gitignore]
+GIt aliases:
+git st - git status
+      bash -[git config --global alias.st status]
+git ci - git commit
+      bash -[git config --global alias.ci commit]
+git co - git checkout
+      bash -[git config --global alias.co checkout]
+git br - For branch
+      bash -[git config --global alias.br branch]
+
+TO UNDO LAST COMMIT:
+[git reset --soft HEAD~1]- Keeps staged edits while undoing commit
+
+TO UNDO BOTH:
+git reset --hard HEAD~1
+- Permanently deletes both progress and previous commit. Use with caution.
+
+
+
+
+BASH SCRIPTING
+
+Bash script: a simple text file  which contains a series of commands
+      Used in linux for command execution, file navigation, and running repeated tasks/scripts
+How to write a bash script:
+      Specify interpreter: #!/bin/bash
+
+
+
+***OS layers***:
+
+1. **Hardware Layer**
+   - The physical components (CPU, memory, storage, peripherals).
+
+2. **Kernel Layer**
+   - The core part of the OS that directly interacts with the hardware.
+   - Manages processes, memory, hardware, and system resources.
+
+3. **System Call Interface**
+   - Provides an interface for user applications to request services from the kernel.
+
+4. **User Interface (UI) Layer**
+   - The interface that allows users to interact with the OS (e.g., command line, graphical interface).
+
+5. **Application Layer**
+   - Software programs that run on the OS, like browsers, games, etc.
+
+This order represents the flow from hardware to user interaction.
+
+
+**What is a Network?**
+- A network is a group of connected devices (computers, phones, etc.) that can share information and resources.
+- **How it works:** Devices use cables or wireless connections to communicate and follow protocols (rules) for data exchange.
+
+**What is the Internet?**
+- The Internet is a global network connecting millions of devices worldwide.
+- **How it works:** The Internet uses servers to store data, and data is sent in packets through networks, reaching its destination via routers.
+- **Key Protocols:**
+  - **TCP/IP:** Ensures correct data transfer.
+  - **HTTP/HTTPS:** Used for web browsing.
+  - **DNS:** Translates website names into IP addresses.
+
+In short:
+- **Network:** Local connection between devices.
+- **Internet:** A global connection of networks.
+
+What is Networking?
+Imagine the internet as a massive web that connects billions of devices, from your phone to servers, computers, and more. Networking is the technology that makes it possible for all of these devices to talk to each other. Through networking, devices exchange data, share resources, and communicate seamlessly.
+
+How Does Networking Work?
+IP Addresses: Every device connected to a network has a unique identifier known as an IP address (Internet Protocol address). Think of it like your home address, but for a device on the internet. When you visit a website, your device requests that website's IP address to establish a connection.
+
+Routers and Switches:
+
+Routers help direct data between different networks. For example, when you connect to a website, the router finds the most efficient way to send your request to the correct server on the internet.
+Switches work within a local network, like a home or school network, by directing traffic between devices on that network. They ensure data is sent to the right device by using its unique MAC (Media Access Control) address.
+Protocols: These are rules that dictate how data is transmitted across the internet. The two most common protocols are:
+
+TCP/IP: This suite of protocols governs how devices communicate across the internet. TCP (Transmission Control Protocol) breaks data into packets, while IP (Internet Protocol) ensures these packets are sent to the correct destination.
+HTTP/HTTPS: These protocols allow for communication between web browsers and servers. HTTP is the standard protocol for loading websites, while HTTPS is its secure version, ensuring encrypted communication between your browser and the website.
+LAN vs. WAN: What's the Difference?
+LAN (Local Area Network): This is a small network confined to a limited geographical area, like your home or school network. Devices connected to a LAN share resources (like printers, files, or internet access) and can communicate easily.
+
+WAN (Wide Area Network): WANs cover larger geographic areas, such as cities, countries, or even continents. The internet is the biggest example of a WAN, connecting millions of LANs all over the world, allowing devices to communicate globally.
+
+Why is Networking Important for Cybersecurity?
+Cyberattacks on Networks: Weak or poorly protected networks are a prime target for cyberattacks. Here are a few common attacks:
+DDoS (Distributed Denial of Service): Attackers overwhelm a network with massive amounts of traffic, causing it to crash and become unavailable.
+Network Sniffing: Hackers monitor data flowing through a network to capture sensitive information like passwords, emails, or credit card numbers.
+Defending Against Cyberattacks:
+Firewalls: These act as barriers, filtering out harmful traffic and blocking unauthorized access to your network.
+Encryption: This secures the data being transmitted, making it unreadable to anyone who intercepts it.
+VPNs (Virtual Private Networks): These create a secure, private connection over a public network, hiding your online activities from potential hackers.
+Cool Networking Tools to Check Out
+Wireshark: A powerful tool used for network analysis. It captures packets flowing through a network, allowing you to analyze the traffic in detail. It's useful for spotting issues or vulnerabilities in a network.
+
+Nmap: This tool scans a network to discover devices and services, and to detect any open ports. It's helpful for penetration testing and identifying network vulnerabilities.
+
+Traceroute: This tool helps track the route data takes across the internet, showing you the path and how long it takes to reach its destination. It’s great for troubleshooting slow connections.
+Got it! Here's a cheat sheet / answer key for your **Linux Terminal Skills & Knowledge Checklist**:
+
+---
+
+✅ **Terminal Navigation & Awareness**  
+- `pwd`: Shows current directory  
+- Arrow keys ↑ / ↓: Scroll through command history  
+- `Tab`: Auto-completes command or file/folder names  
+- `~`: Your home directory (`/home/yourusername`)  
+- `cd ~`: Goes to home directory  
+- `cd /`: Goes to root directory  
+- `cd ..`: Moves one directory up  
+
+---
+
+📁 **File & Folder Operations (CRUD)**  
+- `mkdir foldername`: Creates a folder  
+- `mkdir -p path/to/folder`: Creates nested folders  
+- `touch file.txt`: Creates an empty file  
+- `cat file.txt`: Views file content  
+- `nano file.txt`: Edits file using nano  
+- `rm file.txt`: Deletes file  
+- `rm -r foldername`: Deletes a folder recursively  
+- `rm -i`: Asks for confirmation before each delete  
+
+---
+
+🔐 **Permissions**  
+- `ls -l`: Shows permissions  
+  - Example: `-rw-r--r--`  
+- `chmod 755 filename`: Sets permissions  
+  - `r` = read, `w` = write, `x` = execute  
+- Common permission values:  
+  - `777`: All permissions for everyone  
+  - `755`: Full for owner, read/execute for others  
+  - `644`: Read/write for owner, read for others  
+
+---
+
+⚙️ **System Awareness**  
+- **Absolute path**: Starts with `/`, e.g. `/home/user/docs`  
+- **Relative path**: Based on current dir, e.g. `../folder/file`  
+- User files are usually in `/home/username`  
+- Root of file system is `/`
+
+---
+
+🛡️ **System Safety & Etiquette**  
+- Avoid `rm -rf /` (deletes everything!)  
+- Terminal prefix: `user@host:~/folder$`  
+  - `user`: your username  
+  - `host`: computer name  
+  - `~`: current path  
+- `sudo`: Run as admin  
+- `su`: Switch user (needs password)  
+- `su -`: Switch user and load their environment  
+- **Regular user**: Limited permissions  
+- **Root user**: Full control (dangerous if misused)  
+
+---
+
+💻 **Linux vs Windows vs VMs**  
+- Linux vs Windows:
+  - Case-sensitive vs not  
+  - Different path separators (`/` vs `\`)  
+  - Linux has no drive letters (C:\, etc.)  
+- VM = Virtual Machine: Simulated computer inside another  
+- Host = Real machine  
+- Don’t allocate more than 50% of host’s CPU/RAM to VM  
+
+---
+
+🧰 **Lab Prep Essentials**  
+- Properly shut down VM using GUI or `sudo shutdown now`  
+- Terminal in Debian: Use app menu or Ctrl+Alt+T  
+- Install tools:  
+  - `sudo apt update && sudo apt install git nano`  
+- Back up: Copy files out of VM using shared folders, cloud, etc.  
+- Editors: VS Code, Sublime Text, Nano, etc.  
+
+---
+
+🧠 **Git Flow (Basics)**  
+- `git init`: Start a repo  
+- `git add .`: Stage all changes  
+- `git commit -m "msg"`: Save a snapshot  
+- `git status`: Show what’s staged/unstaged  
+- `git log`: Show commit history  
+- `git push origin branchname`: Push to GitHub  
+- `git pull`: Fetch + merge from remote  
+- `git fetch`: Only download, don’t merge  
+
+---
+
+🌐 **GitHub + Remote Workflow**  
+- `git clone https://github.com/user/repo.git`: Clone repo  
+- `git checkout -b branchname`: Create and switch to branch  
+- **Pull requests**: Merge changes via GitHub  
+- **Merge conflicts**: Happen when changes overlap — resolve manually
