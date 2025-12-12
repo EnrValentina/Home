@@ -1,0 +1,1663 @@
+CyberPatriot Ubuntu Script Started Fri Dec 12 10:14:26 AM CST 2025
+Listing All Users
+nobody
+valentinaenri
+[+] Enforcing password policy
+[+] Ensuring empty passwords disabled
+[+] Hardening SSH
+[!] IMPORTANT: Add allowed users manually to sshd_config
+    Example: AllowUsers gooduser1 gooduser2
+[+] Fixing sensitive file permissions
+[+] Checking /etc/sudoers (manual check required)
+[+] Enabling firewall
+[+] Enabling TCP SYN cookies (DDoS mitigation)
+[+] Enabling automatic updates
+[+] Listing all services
+  UNIT                                        LOAD      ACTIVE   SUB     DESCRIPTION
+  accounts-daemon.service                     loaded    active   running Accounts Service
+  alsa-restore.service                        loaded    active   exited  Save/Restore Sound Card State
+  alsa-state.service                          loaded    inactive dead    Manage Sound Card State (restore and store)
+  anacron.service                             loaded    inactive dead    Run anacron jobs
+  apparmor.service                            loaded    active   exited  Load AppArmor profiles
+  apt-daily-upgrade.service                   loaded    inactive dead    Daily apt upgrade and clean activities
+  apt-daily.service                           loaded    inactive dead    Daily apt download activities
+● auto-cpufreq.service                        not-found inactive dead    auto-cpufreq.service
+  avahi-daemon.service                        loaded    active   running Avahi mDNS/DNS-SD Stack
+  colord.service                              loaded    active   running Manage, Install and Generate Color Profiles
+● connman.service                             not-found inactive dead    connman.service
+● console-screen.service                      not-found inactive dead    console-screen.service
+  console-setup.service                       loaded    active   exited  Set console font and keymap
+  cron.service                                loaded    active   running Regular background program processing daemon
+  cups-browsed.service                        loaded    active   running Make remote CUPS printers available locally
+  cups.service                                loaded    active   running CUPS Scheduler
+  dbus.service                                loaded    active   running D-Bus System Message Bus
+  dpkg-db-backup.service                      loaded    inactive dead    Daily dpkg database backup service
+  e2scrub_all.service                         loaded    inactive dead    Online ext4 Metadata Check for All Filesystems
+  e2scrub_reap.service                        loaded    inactive dead    Remove Stale Online ext4 Metadata Check Snapshots
+  emergency.service                           loaded    inactive dead    Emergency Shell
+  fstrim.service                              loaded    inactive dead    Discard unused blocks on filesystems from /etc/fstab
+  fwupd-refresh.service                       loaded    inactive dead    Refresh fwupd metadata and update motd
+  fwupd.service                               loaded    active   running Firmware update daemon
+  gdm.service                                 loaded    active   running GNOME Display Manager
+  getty-static.service                        loaded    inactive dead    getty on tty2-tty6 if dbus and logind are not available
+  getty@tty1.service                          loaded    inactive dead    Getty on tty1
+  grub-common.service                         loaded    inactive dead    Record successful boot for GRUB
+  ifupdown-pre.service                        loaded    active   exited  Helper to synchronize boot up for ifupdown
+  initrd-cleanup.service                      loaded    inactive dead    Cleaning Up and Shutting Down Daemons
+  initrd-parse-etc.service                    loaded    inactive dead    Mountpoints Configured in the Real Root
+  initrd-switch-root.service                  loaded    inactive dead    Switch Root
+  initrd-udevadm-cleanup-db.service           loaded    inactive dead    Cleanup udev Database
+● kbd.service                                 not-found inactive dead    kbd.service
+  keyboard-setup.service                      loaded    active   exited  Set the console keyboard layout
+  kmod-static-nodes.service                   loaded    active   exited  Create List of Static Device Nodes
+  ldconfig.service                            loaded    inactive dead    Rebuild Dynamic Linker Cache
+  logrotate.service                           loaded    inactive dead    Rotate log files
+  low-memory-monitor.service                  loaded    active   running Low Memory Monitor
+  man-db.service                              loaded    inactive dead    Daily man-db regeneration
+  ModemManager.service                        loaded    active   running Modem Manager
+  modprobe@configfs.service                   loaded    inactive dead    Load Kernel Module configfs
+  modprobe@drm.service                        loaded    inactive dead    Load Kernel Module drm
+  modprobe@efi_pstore.service                 loaded    inactive dead    Load Kernel Module efi_pstore
+  modprobe@fuse.service                       loaded    inactive dead    Load Kernel Module fuse
+  modprobe@sd_mod.service                     loaded    inactive dead    Load Kernel Module sd_mod
+  networking.service                          loaded    active   exited  Raise network interfaces
+  NetworkManager-wait-online.service          loaded    active   exited  Network Manager Wait Online
+  NetworkManager.service                      loaded    active   running Network Manager
+● nslcd.service                               not-found inactive dead    nslcd.service
+  packagekit.service                          loaded    active   running PackageKit Daemon
+  plymouth-quit-wait.service                  loaded    active   exited  Hold until boot process finishes up
+  plymouth-quit.service                       loaded    inactive dead    Terminate Plymouth Boot Screen
+  plymouth-read-write.service                 loaded    active   exited  Tell Plymouth To Write Out Runtime Data
+  plymouth-start.service                      loaded    active   exited  Show Plymouth Boot Screen
+  plymouth-switch-root.service                loaded    inactive dead    Plymouth switch root service
+  polkit.service                              loaded    active   running Authorization Manager
+  power-profiles-daemon.service               loaded    active   running Power Profiles daemon
+  rc-local.service                            loaded    inactive dead    /etc/rc.local Compatibility
+  rescue.service                              loaded    inactive dead    Rescue Shell
+  rtkit-daemon.service                        loaded    active   running RealtimeKit Scheduling Policy Service
+  switcheroo-control.service                  loaded    active   running Switcheroo Control Proxy service
+● syslog.service                              not-found inactive dead    syslog.service
+● system76-power.service                      not-found inactive dead    system76-power.service
+  systemd-ask-password-console.service        loaded    inactive dead    Dispatch Password Requests to Console
+  systemd-ask-password-plymouth.service       loaded    inactive dead    Forward Password Requests to Plymouth
+  systemd-ask-password-wall.service           loaded    inactive dead    Forward Password Requests to Wall
+  systemd-battery-check.service               loaded    inactive dead    Check battery level during early boot
+  systemd-binfmt.service                      loaded    active   exited  Set Up Additional Binary Formats
+  systemd-bsod.service                        loaded    inactive dead    Display Boot-Time Emergency Messages In Full Screen
+  systemd-confext.service                     loaded    inactive dead    Merge System Configuration Images into /etc/
+  systemd-firstboot.service                   loaded    inactive dead    First Boot Wizard
+  systemd-fsck-root.service                   loaded    inactive dead    File System Check on Root Device
+  systemd-hibernate-clear.service             loaded    inactive dead    Clear Stale Hibernate Storage Info
+  systemd-hibernate-resume.service            loaded    inactive dead    Resume from hibernation
+  systemd-hibernate.service                   loaded    inactive dead    System Hibernate
+  systemd-hostnamed.service                   loaded    inactive dead    Hostname Service
+  systemd-hwdb-update.service                 loaded    inactive dead    Rebuild Hardware Database
+  systemd-hybrid-sleep.service                loaded    inactive dead    System Hybrid Suspend+Hibernate
+  systemd-initctl.service                     loaded    inactive dead    initctl Compatibility Daemon
+  systemd-journal-catalog-update.service      loaded    inactive dead    Rebuild Journal Catalog
+  systemd-journal-flush.service               loaded    active   exited  Flush Journal to Persistent Storage
+  systemd-journald.service                    loaded    active   running Journal Service
+  systemd-logind.service                      loaded    active   running User Login Management
+  systemd-machine-id-commit.service           loaded    inactive dead    Save Transient machine-id to Disk
+  systemd-modules-load.service                loaded    active   exited  Load Kernel Modules
+  systemd-networkd-persistent-storage.service loaded    inactive dead    Enable Persistent Storage in systemd-networkd
+  systemd-networkd.service                    loaded    inactive dead    Network Configuration
+● systemd-oomd.service                        not-found inactive dead    systemd-oomd.service
+  systemd-pcrmachine.service                  loaded    inactive dead    TPM PCR Machine ID Measurement
+  systemd-pcrphase-initrd.service             loaded    inactive dead    TPM PCR Barrier (initrd)
+  systemd-pcrphase-sysinit.service            loaded    inactive dead    TPM PCR Barrier (Initialization)
+  systemd-pcrphase.service                    loaded    inactive dead    TPM PCR Barrier (User)
+  systemd-pstore.service                      loaded    inactive dead    Platform Persistent Storage Archival
+  systemd-quotacheck-root.service             loaded    inactive dead    Root File System Quota Check
+  systemd-random-seed.service                 loaded    active   exited  Load/Save OS Random Seed
+  systemd-remount-fs.service                  loaded    active   exited  Remount Root and Kernel File Systems
+  systemd-rfkill.service                      loaded    inactive dead    Load/Save RF Kill Switch Status
+  systemd-soft-reboot.service                 loaded    inactive dead    Reboot System Userspace
+  systemd-suspend-then-hibernate.service      loaded    inactive dead    System Suspend then Hibernate
+  systemd-suspend.service                     loaded    inactive dead    System Suspend
+  systemd-sysctl.service                      loaded    active   exited  Apply Kernel Variables
+  systemd-sysext.service                      loaded    inactive dead    Merge System Extension Images into /usr/ and /opt/
+  systemd-sysusers.service                    loaded    inactive dead    Create System Users
+  systemd-timesyncd.service                   loaded    active   running Network Time Synchronization
+  systemd-tmpfiles-clean.service              loaded    inactive dead    Cleanup of Temporary Directories
+  systemd-tmpfiles-setup-dev-early.service    loaded    active   exited  Create Static Device Nodes in /dev gracefully
+  systemd-tmpfiles-setup-dev.service          loaded    active   exited  Create Static Device Nodes in /dev
+  systemd-tmpfiles-setup.service              loaded    active   exited  Create System Files and Directories
+  systemd-tpm2-setup-early.service            loaded    inactive dead    Early TPM SRK Setup
+  systemd-tpm2-setup.service                  loaded    inactive dead    TPM SRK Setup
+  systemd-udev-load-credentials.service       loaded    active   exited  Load udev Rules from Credentials
+  systemd-udev-settle.service                 loaded    inactive dead    Wait for udev To Complete Device Initialization
+  systemd-udev-trigger.service                loaded    active   exited  Coldplug All udev Devices
+  systemd-udevd.service                       loaded    active   running Rule-based Manager for Device Events and Files
+  systemd-update-done.service                 loaded    inactive dead    Update is Completed
+  systemd-user-sessions.service               loaded    active   exited  Permit User Sessions
+● systemd-vconsole-setup.service              not-found inactive dead    systemd-vconsole-setup.service
+● tlp.service                                 not-found inactive dead    tlp.service
+● tuned.service                               not-found inactive dead    tuned.service
+  udisks2.service                             loaded    active   running Disk Manager
+  upower.service                              loaded    active   running Daemon for power management
+  user-runtime-dir@1000.service               loaded    active   exited  User Runtime Directory /run/user/1000
+  user@1000.service                           loaded    active   running User Manager for UID 1000
+  vboxadd-service.service                     loaded    inactive dead    vboxadd-service.service
+● vboxadd.service                             loaded    failed   failed  vboxadd.service
+  wpa_supplicant.service                      loaded    active   running WPA supplicant
+  wtmpdb-update-boot.service                  loaded    active   exited  Write boot and shutdown times into wtmpdb
+
+Legend: LOAD   → Reflects whether the unit definition was properly loaded.
+        ACTIVE → The high-level unit activation state, i.e. generalization of SUB.
+        SUB    → The low-level unit activation state, values depend on unit type.
+
+128 loaded units listed.
+To show all installed unit files use 'systemctl list-unit-files'.
+[+] Removing known dangerous packages
+Removed: netcat
+[+] Scanning for suspicious files
+/home/valentinaenri/Bashing_Boxes_backup/bashing_boxes.sh
+/home/valentinaenri/Bashing_Boxes_backup/bashingboxes.sh
+/home/valentinaenri/Home/ubuntu24_cp.sh
+/home/valentinaenri/Bashing_Boxes/bashing_boxes.sh
+/home/valentinaenri/Bashing_Boxes/sample_script_mrwarren.sh
+/home/valentinaenri/.local/share/Trash/files/bashingboxes.sh
+/etc/wpa_supplicant/action_wpa.sh
+/etc/wpa_supplicant/functions.sh
+/etc/wpa_supplicant/ifupdown.sh
+/etc/xdg/plasma-workspace/env/env.sh
+/etc/profile.d/bash_completion.sh
+/etc/profile.d/im-config_wayland.sh
+/etc/profile.d/gnome-session_gnomerc.sh
+/etc/profile.d/vte-2.91.sh
+/etc/console-setup/cached_setup_keyboard.sh
+/etc/console-setup/cached_setup_terminal.sh
+/etc/console-setup/cached_setup_font.sh
+/etc/libreoffice/soffice.sh
+/etc/init.d/console-setup.sh
+/etc/init.d/keyboard-setup.sh
+/usr/lib/grub/i386-pc/modinfo.sh
+/usr/lib/ifupdown/wait-for-ll6.sh
+/usr/lib/ifupdown/wait-online.sh
+/usr/lib/ifupdown/settle-dad.sh
+/usr/lib/init/vars.sh
+/usr/lib/systemd/profile.d/70-systemd-shell-extra.sh
+/usr/lib/console-setup/console-setup.sh
+/usr/lib/console-setup/keyboard-setup.sh
+/usr/bin/gettext.sh
+/usr/libexec/file-roller/isoinfo.sh
+/usr/share/PackageKit/helpers/test_spawn/search-name.sh
+/usr/share/ucf/ucf_library.sh
+/usr/share/doc/bubblewrap/examples/bubblewrap-shell.sh
+/usr/share/doc/bubblewrap/examples/flatpak-run.sh
+/usr/share/doc/git/contrib/fast-import/git-import.sh
+/usr/share/doc/git/contrib/vscode/init.sh
+/usr/share/doc/git/contrib/diff-highlight/t/t9400-diff-highlight.sh
+/usr/share/doc/git/contrib/coverage-diff.sh
+/usr/share/doc/git/contrib/thunderbird-patch-inline/appp.sh
+/usr/share/doc/git/contrib/subtree/t/t7900-subtree.sh
+/usr/share/doc/git/contrib/subtree/git-subtree.sh
+/usr/share/doc/git/contrib/rerere-train.sh
+/usr/share/doc/git/contrib/update-unicode/update_unicode.sh
+/usr/share/doc/git/contrib/git-resurrect.sh
+/usr/share/doc/git/contrib/credential/netrc/t-git-credential-netrc.sh
+/usr/share/doc/git/contrib/remotes2config.sh
+/usr/share/doc/bogofilter-common/examples/contrib/scramble.sh
+/usr/share/doc/bogofilter-common/examples/contrib/bogofilter-qfe.sh
+/usr/share/doc/bogofilter-common/examples/contrib/parmtest.sh
+/usr/share/doc/shotwell/examples/replace_thumbnailer.sh
+/usr/share/doc/ifupdown/examples/pcmcia-compat.sh
+/usr/share/doc/ifupdown/examples/get-mac-address.sh
+/usr/share/doc/ifupdown/examples/ping-places.sh
+/usr/share/doc/ifupdown/examples/check-mac-address.sh
+/usr/share/doc/cron/examples/cron-tasks-review.sh
+/usr/share/doc/python3-psutil/examples/internal/install-sysdeps.sh
+/usr/share/doc/netcat-traditional/examples/scripts/dist.sh
+/usr/share/desktop-base/joy-theme/grub/grub_background.sh
+/usr/share/desktop-base/moonlight-theme/grub/grub_background.sh
+/usr/share/desktop-base/ceratopsian-theme/grub/grub_background.sh
+/usr/share/desktop-base/softwaves-theme/grub/grub_background.sh
+/usr/share/desktop-base/homeworld-theme/grub/grub_background.sh
+/usr/share/desktop-base/lines-theme/grub/grub_background.sh
+/usr/share/desktop-base/emerald-theme/grub/grub_background.sh
+/usr/share/desktop-base/futureprototype-theme/grub/grub_background.sh
+/usr/share/desktop-base/spacefun-theme/grub/grub_background.sh
+/usr/share/user-session-migration/scripts/gnome-tweaks-autostart-cleanup.sh
+/usr/share/os-prober/common.sh
+/usr/share/libreoffice/shell-lib-extensions.sh
+/usr/share/alsa/utils.sh
+/usr/share/debconf/confmodule.sh
+/usr/share/cups/braille/cups-braille.sh
+/usr/share/cups/braille/indexv3.sh
+/usr/share/cups/braille/index.sh
+/usr/share/cups/braille/indexv4.sh
+/usr/share/dpkg/sh/dpkg-error.sh
+/root/vboxpostinstall.sh
+/boot/grub/i386-pc/modinfo.sh
+/opt/VBoxGuestAdditions-7.2.0/uninstall.sh
+/opt/VBoxGuestAdditions-7.2.0/other/check_module_dependencies.sh
+/opt/VBoxGuestAdditions-7.2.0/other/x11config.sh
+/opt/VBoxGuestAdditions-7.2.0/routines.sh
+/etc/python3.13/sitecustomize.py
+/usr/lib/python3.13/random.py
+/usr/lib/python3.13/pty.py
+/usr/lib/python3.13/_pyio.py
+/usr/lib/python3.13/_sysconfigdata__linux_x86_64-linux-gnu.py
+/usr/lib/python3.13/_ios_support.py
+/usr/lib/python3.13/_threading_local.py
+/usr/lib/python3.13/hashlib.py
+/usr/lib/python3.13/zoneinfo/_tzpath.py
+/usr/lib/python3.13/zoneinfo/__init__.py
+/usr/lib/python3.13/zoneinfo/_common.py
+/usr/lib/python3.13/zoneinfo/_zoneinfo.py
+/usr/lib/python3.13/tarfile.py
+/usr/lib/python3.13/wsgiref/__init__.py
+/usr/lib/python3.13/wsgiref/types.py
+/usr/lib/python3.13/wsgiref/headers.py
+/usr/lib/python3.13/wsgiref/simple_server.py
+/usr/lib/python3.13/wsgiref/validate.py
+/usr/lib/python3.13/wsgiref/handlers.py
+/usr/lib/python3.13/wsgiref/util.py
+/usr/lib/python3.13/sre_constants.py
+/usr/lib/python3.13/urllib/error.py
+/usr/lib/python3.13/urllib/response.py
+/usr/lib/python3.13/urllib/request.py
+/usr/lib/python3.13/urllib/robotparser.py
+/usr/lib/python3.13/urllib/__init__.py
+/usr/lib/python3.13/urllib/parse.py
+/usr/lib/python3.13/uuid.py
+/usr/lib/python3.13/filecmp.py
+/usr/lib/python3.13/compileall.py
+/usr/lib/python3.13/xml/sax/saxutils.py
+/usr/lib/python3.13/xml/sax/__init__.py
+/usr/lib/python3.13/xml/sax/xmlreader.py
+/usr/lib/python3.13/xml/sax/expatreader.py
+/usr/lib/python3.13/xml/sax/handler.py
+/usr/lib/python3.13/xml/sax/_exceptions.py
+/usr/lib/python3.13/xml/__init__.py
+/usr/lib/python3.13/xml/etree/__init__.py
+/usr/lib/python3.13/xml/etree/ElementInclude.py
+/usr/lib/python3.13/xml/etree/ElementPath.py
+/usr/lib/python3.13/xml/etree/cElementTree.py
+/usr/lib/python3.13/xml/etree/ElementTree.py
+/usr/lib/python3.13/xml/dom/minicompat.py
+/usr/lib/python3.13/xml/dom/domreg.py
+/usr/lib/python3.13/xml/dom/__init__.py
+/usr/lib/python3.13/xml/dom/NodeFilter.py
+/usr/lib/python3.13/xml/dom/minidom.py
+/usr/lib/python3.13/xml/dom/xmlbuilder.py
+/usr/lib/python3.13/xml/dom/expatbuilder.py
+/usr/lib/python3.13/xml/dom/pulldom.py
+/usr/lib/python3.13/xml/parsers/expat.py
+/usr/lib/python3.13/xml/parsers/__init__.py
+/usr/lib/python3.13/weakref.py
+/usr/lib/python3.13/sysconfig/__init__.py
+/usr/lib/python3.13/sysconfig/__main__.py
+/usr/lib/python3.13/re/_parser.py
+/usr/lib/python3.13/re/_compiler.py
+/usr/lib/python3.13/re/__init__.py
+/usr/lib/python3.13/re/_casefix.py
+/usr/lib/python3.13/re/_constants.py
+/usr/lib/python3.13/_sitebuiltins.py
+/usr/lib/python3.13/imaplib.py
+/usr/lib/python3.13/posixpath.py
+/usr/lib/python3.13/fnmatch.py
+/usr/lib/python3.13/sqlite3/__init__.py
+/usr/lib/python3.13/sqlite3/__main__.py
+/usr/lib/python3.13/sqlite3/dump.py
+/usr/lib/python3.13/sqlite3/dbapi2.py
+/usr/lib/python3.13/bisect.py
+/usr/lib/python3.13/pickle.py
+/usr/lib/python3.13/bz2.py
+/usr/lib/python3.13/_pyrepl/utils.py
+/usr/lib/python3.13/_pyrepl/reader.py
+/usr/lib/python3.13/_pyrepl/main.py
+/usr/lib/python3.13/_pyrepl/__init__.py
+/usr/lib/python3.13/_pyrepl/windows_eventqueue.py
+/usr/lib/python3.13/_pyrepl/types.py
+/usr/lib/python3.13/_pyrepl/completing_reader.py
+/usr/lib/python3.13/_pyrepl/simple_interact.py
+/usr/lib/python3.13/_pyrepl/readline.py
+/usr/lib/python3.13/_pyrepl/unix_console.py
+/usr/lib/python3.13/_pyrepl/base_eventqueue.py
+/usr/lib/python3.13/_pyrepl/historical_reader.py
+/usr/lib/python3.13/_pyrepl/commands.py
+/usr/lib/python3.13/_pyrepl/keymap.py
+/usr/lib/python3.13/_pyrepl/pager.py
+/usr/lib/python3.13/_pyrepl/unix_eventqueue.py
+/usr/lib/python3.13/_pyrepl/trace.py
+/usr/lib/python3.13/_pyrepl/__main__.py
+/usr/lib/python3.13/_pyrepl/windows_console.py
+/usr/lib/python3.13/_pyrepl/_minimal_curses.py
+/usr/lib/python3.13/_pyrepl/curses.py
+/usr/lib/python3.13/_pyrepl/fancy_termios.py
+/usr/lib/python3.13/_pyrepl/console.py
+/usr/lib/python3.13/_pyrepl/input.py
+/usr/lib/python3.13/_pyrepl/_threading_handler.py
+/usr/lib/python3.13/__phello__/__init__.py
+/usr/lib/python3.13/__phello__/spam.py
+/usr/lib/python3.13/venv/__init__.py
+/usr/lib/python3.13/venv/__main__.py
+/usr/lib/python3.13/hmac.py
+/usr/lib/python3.13/_android_support.py
+/usr/lib/python3.13/subprocess.py
+/usr/lib/python3.13/site.py
+/usr/lib/python3.13/typing.py
+/usr/lib/python3.13/warnings.py
+/usr/lib/python3.13/bdb.py
+/usr/lib/python3.13/secrets.py
+/usr/lib/python3.13/gzip.py
+/usr/lib/python3.13/pkgutil.py
+/usr/lib/python3.13/decimal.py
+/usr/lib/python3.13/os.py
+/usr/lib/python3.13/argparse.py
+/usr/lib/python3.13/shlex.py
+/usr/lib/python3.13/reprlib.py
+/usr/lib/python3.13/netrc.py
+/usr/lib/python3.13/struct.py
+/usr/lib/python3.13/types.py
+/usr/lib/python3.13/ntpath.py
+/usr/lib/python3.13/antigravity.py
+/usr/lib/python3.13/contextvars.py
+/usr/lib/python3.13/concurrent/__init__.py
+/usr/lib/python3.13/concurrent/futures/thread.py
+/usr/lib/python3.13/concurrent/futures/__init__.py
+/usr/lib/python3.13/concurrent/futures/process.py
+/usr/lib/python3.13/concurrent/futures/_base.py
+/usr/lib/python3.13/_pydatetime.py
+/usr/lib/python3.13/webbrowser.py
+/usr/lib/python3.13/ast.py
+/usr/lib/python3.13/sched.py
+/usr/lib/python3.13/token.py
+/usr/lib/python3.13/shelve.py
+/usr/lib/python3.13/multiprocessing/connection.py
+/usr/lib/python3.13/multiprocessing/dummy/connection.py
+/usr/lib/python3.13/multiprocessing/dummy/__init__.py
+/usr/lib/python3.13/multiprocessing/heap.py
+/usr/lib/python3.13/multiprocessing/context.py
+/usr/lib/python3.13/multiprocessing/popen_spawn_win32.py
+/usr/lib/python3.13/multiprocessing/spawn.py
+/usr/lib/python3.13/multiprocessing/__init__.py
+/usr/lib/python3.13/multiprocessing/forkserver.py
+/usr/lib/python3.13/multiprocessing/reduction.py
+/usr/lib/python3.13/multiprocessing/process.py
+/usr/lib/python3.13/multiprocessing/shared_memory.py
+/usr/lib/python3.13/multiprocessing/pool.py
+/usr/lib/python3.13/multiprocessing/resource_tracker.py
+/usr/lib/python3.13/multiprocessing/popen_fork.py
+/usr/lib/python3.13/multiprocessing/sharedctypes.py
+/usr/lib/python3.13/multiprocessing/popen_forkserver.py
+/usr/lib/python3.13/multiprocessing/resource_sharer.py
+/usr/lib/python3.13/multiprocessing/synchronize.py
+/usr/lib/python3.13/multiprocessing/popen_spawn_posix.py
+/usr/lib/python3.13/multiprocessing/util.py
+/usr/lib/python3.13/multiprocessing/queues.py
+/usr/lib/python3.13/multiprocessing/managers.py
+/usr/lib/python3.13/getpass.py
+/usr/lib/python3.13/nturl2path.py
+/usr/lib/python3.13/smtplib.py
+/usr/lib/python3.13/io.py
+/usr/lib/python3.13/_compression.py
+/usr/lib/python3.13/string.py
+/usr/lib/python3.13/linecache.py
+/usr/lib/python3.13/socket.py
+/usr/lib/python3.13/pyclbr.py
+/usr/lib/python3.13/cProfile.py
+/usr/lib/python3.13/plistlib.py
+/usr/lib/python3.13/locale.py
+/usr/lib/python3.13/ftplib.py
+/usr/lib/python3.13/_collections_abc.py
+/usr/lib/python3.13/unittest/signals.py
+/usr/lib/python3.13/unittest/suite.py
+/usr/lib/python3.13/unittest/main.py
+/usr/lib/python3.13/unittest/__init__.py
+/usr/lib/python3.13/unittest/runner.py
+/usr/lib/python3.13/unittest/loader.py
+/usr/lib/python3.13/unittest/case.py
+/usr/lib/python3.13/unittest/async_case.py
+/usr/lib/python3.13/unittest/__main__.py
+/usr/lib/python3.13/unittest/result.py
+/usr/lib/python3.13/unittest/util.py
+/usr/lib/python3.13/unittest/_log.py
+/usr/lib/python3.13/unittest/mock.py
+/usr/lib/python3.13/tracemalloc.py
+/usr/lib/python3.13/collections/__init__.py
+/usr/lib/python3.13/this.py
+/usr/lib/python3.13/cmd.py
+/usr/lib/python3.13/asyncio/trsock.py
+/usr/lib/python3.13/asyncio/mixins.py
+/usr/lib/python3.13/asyncio/unix_events.py
+/usr/lib/python3.13/asyncio/streams.py
+/usr/lib/python3.13/asyncio/staggered.py
+/usr/lib/python3.13/asyncio/locks.py
+/usr/lib/python3.13/asyncio/subprocess.py
+/usr/lib/python3.13/asyncio/exceptions.py
+/usr/lib/python3.13/asyncio/threads.py
+/usr/lib/python3.13/asyncio/__init__.py
+/usr/lib/python3.13/asyncio/windows_utils.py
+/usr/lib/python3.13/asyncio/tasks.py
+/usr/lib/python3.13/asyncio/timeouts.py
+/usr/lib/python3.13/asyncio/coroutines.py
+/usr/lib/python3.13/asyncio/taskgroups.py
+/usr/lib/python3.13/asyncio/windows_events.py
+/usr/lib/python3.13/asyncio/base_subprocess.py
+/usr/lib/python3.13/asyncio/format_helpers.py
+/usr/lib/python3.13/asyncio/futures.py
+/usr/lib/python3.13/asyncio/proactor_events.py
+/usr/lib/python3.13/asyncio/base_events.py
+/usr/lib/python3.13/asyncio/events.py
+/usr/lib/python3.13/asyncio/__main__.py
+/usr/lib/python3.13/asyncio/constants.py
+/usr/lib/python3.13/asyncio/log.py
+/usr/lib/python3.13/asyncio/protocols.py
+/usr/lib/python3.13/asyncio/base_tasks.py
+/usr/lib/python3.13/asyncio/base_futures.py
+/usr/lib/python3.13/asyncio/runners.py
+/usr/lib/python3.13/asyncio/transports.py
+/usr/lib/python3.13/asyncio/sslproto.py
+/usr/lib/python3.13/asyncio/queues.py
+/usr/lib/python3.13/asyncio/selector_events.py
+/usr/lib/python3.13/copy.py
+/usr/lib/python3.13/importlib/__init__.py
+/usr/lib/python3.13/importlib/_abc.py
+/usr/lib/python3.13/importlib/metadata/_text.py
+/usr/lib/python3.13/importlib/metadata/_itertools.py
+/usr/lib/python3.13/importlib/metadata/__init__.py
+/usr/lib/python3.13/importlib/metadata/_meta.py
+/usr/lib/python3.13/importlib/metadata/_collections.py
+/usr/lib/python3.13/importlib/metadata/_functools.py
+/usr/lib/python3.13/importlib/metadata/_adapters.py
+/usr/lib/python3.13/importlib/metadata/diagnose.py
+/usr/lib/python3.13/importlib/simple.py
+/usr/lib/python3.13/importlib/readers.py
+/usr/lib/python3.13/importlib/abc.py
+/usr/lib/python3.13/importlib/_bootstrap_external.py
+/usr/lib/python3.13/importlib/util.py
+/usr/lib/python3.13/importlib/resources/_itertools.py
+/usr/lib/python3.13/importlib/resources/__init__.py
+/usr/lib/python3.13/importlib/resources/_common.py
+/usr/lib/python3.13/importlib/resources/simple.py
+/usr/lib/python3.13/importlib/resources/_functional.py
+/usr/lib/python3.13/importlib/resources/readers.py
+/usr/lib/python3.13/importlib/resources/_adapters.py
+/usr/lib/python3.13/importlib/resources/abc.py
+/usr/lib/python3.13/importlib/_bootstrap.py
+/usr/lib/python3.13/importlib/machinery.py
+/usr/lib/python3.13/keyword.py
+/usr/lib/python3.13/_strptime.py
+/usr/lib/python3.13/operator.py
+/usr/lib/python3.13/stat.py
+/usr/lib/python3.13/pathlib/__init__.py
+/usr/lib/python3.13/pathlib/_abc.py
+/usr/lib/python3.13/pathlib/_local.py
+/usr/lib/python3.13/base64.py
+/usr/lib/python3.13/functools.py
+/usr/lib/python3.13/numbers.py
+/usr/lib/python3.13/wave.py
+/usr/lib/python3.13/dbm/__init__.py
+/usr/lib/python3.13/dbm/gnu.py
+/usr/lib/python3.13/dbm/dumb.py
+/usr/lib/python3.13/dbm/ndbm.py
+/usr/lib/python3.13/dbm/sqlite3.py
+/usr/lib/python3.13/sre_parse.py
+/usr/lib/python3.13/fileinput.py
+/usr/lib/python3.13/selectors.py
+/usr/lib/python3.13/xmlrpc/server.py
+/usr/lib/python3.13/xmlrpc/__init__.py
+/usr/lib/python3.13/xmlrpc/client.py
+/usr/lib/python3.13/_colorize.py
+/usr/lib/python3.13/py_compile.py
+/usr/lib/python3.13/fractions.py
+/usr/lib/python3.13/_opcode_metadata.py
+/usr/lib/python3.13/glob.py
+/usr/lib/python3.13/_pylong.py
+/usr/lib/python3.13/statistics.py
+/usr/lib/python3.13/configparser.py
+/usr/lib/python3.13/ipaddress.py
+/usr/lib/python3.13/ssl.py
+/usr/lib/python3.13/heapq.py
+/usr/lib/python3.13/copyreg.py
+/usr/lib/python3.13/tempfile.py
+/usr/lib/python3.13/optparse.py
+/usr/lib/python3.13/poplib.py
+/usr/lib/python3.13/textwrap.py
+/usr/lib/python3.13/mimetypes.py
+/usr/lib/python3.13/trace.py
+/usr/lib/python3.13/logging/__init__.py
+/usr/lib/python3.13/logging/config.py
+/usr/lib/python3.13/logging/handlers.py
+/usr/lib/python3.13/calendar.py
+/usr/lib/python3.13/mailbox.py
+/usr/lib/python3.13/quopri.py
+/usr/lib/python3.13/queue.py
+/usr/lib/python3.13/test/libregrtest/utils.py
+/usr/lib/python3.13/test/libregrtest/run_workers.py
+/usr/lib/python3.13/test/libregrtest/findtests.py
+/usr/lib/python3.13/test/libregrtest/logger.py
+/usr/lib/python3.13/test/libregrtest/main.py
+/usr/lib/python3.13/test/libregrtest/__init__.py
+/usr/lib/python3.13/test/libregrtest/refleak.py
+/usr/lib/python3.13/test/libregrtest/pgo.py
+/usr/lib/python3.13/test/libregrtest/filter.py
+/usr/lib/python3.13/test/libregrtest/runtests.py
+/usr/lib/python3.13/test/libregrtest/results.py
+/usr/lib/python3.13/test/libregrtest/worker.py
+/usr/lib/python3.13/test/libregrtest/save_env.py
+/usr/lib/python3.13/test/libregrtest/cmdline.py
+/usr/lib/python3.13/test/libregrtest/setup.py
+/usr/lib/python3.13/test/libregrtest/result.py
+/usr/lib/python3.13/test/libregrtest/win_utils.py
+/usr/lib/python3.13/test/libregrtest/tsan.py
+/usr/lib/python3.13/test/libregrtest/single.py
+/usr/lib/python3.13/test/libregrtest/testresult.py
+/usr/lib/python3.13/test/__init__.py
+/usr/lib/python3.13/test/support/script_helper.py
+/usr/lib/python3.13/test/support/smtpd.py
+/usr/lib/python3.13/test/support/refleak_helper.py
+/usr/lib/python3.13/test/support/os_helper.py
+/usr/lib/python3.13/test/support/__init__.py
+/usr/lib/python3.13/test/support/_hypothesis_stubs/_helpers.py
+/usr/lib/python3.13/test/support/_hypothesis_stubs/__init__.py
+/usr/lib/python3.13/test/support/_hypothesis_stubs/strategies.py
+/usr/lib/python3.13/test/support/hypothesis_helper.py
+/usr/lib/python3.13/test/support/i18n_helper.py
+/usr/lib/python3.13/test/support/logging_helper.py
+/usr/lib/python3.13/test/support/bytecode_helper.py
+/usr/lib/python3.13/test/support/numbers.py
+/usr/lib/python3.13/test/support/pty_helper.py
+/usr/lib/python3.13/test/support/asynchat.py
+/usr/lib/python3.13/test/support/ast_helper.py
+/usr/lib/python3.13/test/support/interpreters/_crossinterp.py
+/usr/lib/python3.13/test/support/interpreters/__init__.py
+/usr/lib/python3.13/test/support/interpreters/channels.py
+/usr/lib/python3.13/test/support/interpreters/queues.py
+/usr/lib/python3.13/test/support/hashlib_helper.py
+/usr/lib/python3.13/test/support/asyncore.py
+/usr/lib/python3.13/test/support/socket_helper.py
+/usr/lib/python3.13/test/support/threading_helper.py
+/usr/lib/python3.13/test/support/warnings_helper.py
+/usr/lib/python3.13/test/support/import_helper.py
+/usr/lib/python3.13/test/support/testcase.py
+/usr/lib/python3.13/test/support/venv.py
+/usr/lib/python3.13/test/typinganndata/_typed_dict_helper.py
+/usr/lib/python3.13/test/typinganndata/mod_generics_cache.py
+/usr/lib/python3.13/test/typinganndata/ann_module5.py
+/usr/lib/python3.13/test/typinganndata/__init__.py
+/usr/lib/python3.13/test/typinganndata/ann_module8.py
+/usr/lib/python3.13/test/typinganndata/ann_module3.py
+/usr/lib/python3.13/test/typinganndata/ann_module4.py
+/usr/lib/python3.13/test/typinganndata/ann_module.py
+/usr/lib/python3.13/test/typinganndata/ann_module9.py
+/usr/lib/python3.13/test/typinganndata/ann_module2.py
+/usr/lib/python3.13/test/typinganndata/ann_module695.py
+/usr/lib/python3.13/test/typinganndata/ann_module7.py
+/usr/lib/python3.13/test/typinganndata/ann_module6.py
+/usr/lib/python3.13/test/__main__.py
+/usr/lib/python3.13/test/regrtest.py
+/usr/lib/python3.13/test/test_support.py
+/usr/lib/python3.13/graphlib.py
+/usr/lib/python3.13/getopt.py
+/usr/lib/python3.13/dis.py
+/usr/lib/python3.13/doctest.py
+/usr/lib/python3.13/traceback.py
+/usr/lib/python3.13/csv.py
+/usr/lib/python3.13/_weakrefset.py
+/usr/lib/python3.13/colorsys.py
+/usr/lib/python3.13/_osx_support.py
+/usr/lib/python3.13/datetime.py
+/usr/lib/python3.13/threading.py
+/usr/lib/python3.13/modulefinder.py
+/usr/lib/python3.13/stringprep.py
+/usr/lib/python3.13/shutil.py
+/usr/lib/python3.13/code.py
+/usr/lib/python3.13/pydoc_data/topics.py
+/usr/lib/python3.13/pydoc_data/__init__.py
+/usr/lib/python3.13/pstats.py
+/usr/lib/python3.13/_pydecimal.py
+/usr/lib/python3.13/__future__.py
+/usr/lib/python3.13/email/message.py
+/usr/lib/python3.13/email/utils.py
+/usr/lib/python3.13/email/__init__.py
+/usr/lib/python3.13/email/encoders.py
+/usr/lib/python3.13/email/policy.py
+/usr/lib/python3.13/email/headerregistry.py
+/usr/lib/python3.13/email/base64mime.py
+/usr/lib/python3.13/email/charset.py
+/usr/lib/python3.13/email/mime/multipart.py
+/usr/lib/python3.13/email/mime/audio.py
+/usr/lib/python3.13/email/mime/message.py
+/usr/lib/python3.13/email/mime/application.py
+/usr/lib/python3.13/email/mime/__init__.py
+/usr/lib/python3.13/email/mime/image.py
+/usr/lib/python3.13/email/mime/nonmultipart.py
+/usr/lib/python3.13/email/mime/base.py
+/usr/lib/python3.13/email/mime/text.py
+/usr/lib/python3.13/email/errors.py
+/usr/lib/python3.13/email/contentmanager.py
+/usr/lib/python3.13/email/_policybase.py
+/usr/lib/python3.13/email/quoprimime.py
+/usr/lib/python3.13/email/parser.py
+/usr/lib/python3.13/email/header.py
+/usr/lib/python3.13/email/_encoded_words.py
+/usr/lib/python3.13/email/feedparser.py
+/usr/lib/python3.13/email/_parseaddr.py
+/usr/lib/python3.13/email/iterators.py
+/usr/lib/python3.13/email/generator.py
+/usr/lib/python3.13/email/_header_value_parser.py
+/usr/lib/python3.13/gettext.py
+/usr/lib/python3.13/curses/textpad.py
+/usr/lib/python3.13/curses/ascii.py
+/usr/lib/python3.13/curses/__init__.py
+/usr/lib/python3.13/curses/has_key.py
+/usr/lib/python3.13/curses/panel.py
+/usr/lib/python3.13/tabnanny.py
+/usr/lib/python3.13/_markupbase.py
+/usr/lib/python3.13/runpy.py
+/usr/lib/python3.13/abc.py
+/usr/lib/python3.13/lzma.py
+/usr/lib/python3.13/profile.py
+/usr/lib/python3.13/_compat_pickle.py
+/usr/lib/python3.13/zipapp.py
+/usr/lib/python3.13/_distutils_system_mod.py
+/usr/lib/python3.13/_aix_support.py
+/usr/lib/python3.13/timeit.py
+/usr/lib/python3.13/pdb.py
+/usr/lib/python3.13/opcode.py
+/usr/lib/python3.13/turtle.py
+/usr/lib/python3.13/zipimport.py
+/usr/lib/python3.13/tty.py
+/usr/lib/python3.13/encodings/cp874.py
+/usr/lib/python3.13/encodings/cp852.py
+/usr/lib/python3.13/encodings/charmap.py
+/usr/lib/python3.13/encodings/johab.py
+/usr/lib/python3.13/encodings/iso8859_3.py
+/usr/lib/python3.13/encodings/base64_codec.py
+/usr/lib/python3.13/encodings/cp1250.py
+/usr/lib/python3.13/encodings/cp424.py
+/usr/lib/python3.13/encodings/iso8859_14.py
+/usr/lib/python3.13/encodings/iso8859_4.py
+/usr/lib/python3.13/encodings/hex_codec.py
+/usr/lib/python3.13/encodings/mac_farsi.py
+/usr/lib/python3.13/encodings/euc_jis_2004.py
+/usr/lib/python3.13/encodings/iso8859_15.py
+/usr/lib/python3.13/encodings/iso8859_9.py
+/usr/lib/python3.13/encodings/iso2022_jp_1.py
+/usr/lib/python3.13/encodings/iso2022_kr.py
+/usr/lib/python3.13/encodings/cp861.py
+/usr/lib/python3.13/encodings/mac_cyrillic.py
+/usr/lib/python3.13/encodings/ascii.py
+/usr/lib/python3.13/encodings/zlib_codec.py
+/usr/lib/python3.13/encodings/cp1256.py
+/usr/lib/python3.13/encodings/iso8859_10.py
+/usr/lib/python3.13/encodings/rot_13.py
+/usr/lib/python3.13/encodings/mac_turkish.py
+/usr/lib/python3.13/encodings/bz2_codec.py
+/usr/lib/python3.13/encodings/iso8859_7.py
+/usr/lib/python3.13/encodings/__init__.py
+/usr/lib/python3.13/encodings/cp273.py
+/usr/lib/python3.13/encodings/koi8_t.py
+/usr/lib/python3.13/encodings/utf_32_le.py
+/usr/lib/python3.13/encodings/shift_jis.py
+/usr/lib/python3.13/encodings/mac_arabic.py
+/usr/lib/python3.13/encodings/cp037.py
+/usr/lib/python3.13/encodings/iso8859_16.py
+/usr/lib/python3.13/encodings/cp1026.py
+/usr/lib/python3.13/encodings/koi8_u.py
+/usr/lib/python3.13/encodings/utf_16.py
+/usr/lib/python3.13/encodings/cp862.py
+/usr/lib/python3.13/encodings/cp1253.py
+/usr/lib/python3.13/encodings/utf_32.py
+/usr/lib/python3.13/encodings/iso8859_2.py
+/usr/lib/python3.13/encodings/cp1257.py
+/usr/lib/python3.13/encodings/utf_32_be.py
+/usr/lib/python3.13/encodings/mac_latin2.py
+/usr/lib/python3.13/encodings/gb18030.py
+/usr/lib/python3.13/encodings/cp1251.py
+/usr/lib/python3.13/encodings/mac_croatian.py
+/usr/lib/python3.13/encodings/uu_codec.py
+/usr/lib/python3.13/encodings/ptcp154.py
+/usr/lib/python3.13/encodings/iso8859_8.py
+/usr/lib/python3.13/encodings/cp875.py
+/usr/lib/python3.13/encodings/shift_jisx0213.py
+/usr/lib/python3.13/encodings/cp863.py
+/usr/lib/python3.13/encodings/undefined.py
+/usr/lib/python3.13/encodings/cp1006.py
+/usr/lib/python3.13/encodings/cp858.py
+/usr/lib/python3.13/encodings/cp1258.py
+/usr/lib/python3.13/encodings/oem.py
+/usr/lib/python3.13/encodings/idna.py
+/usr/lib/python3.13/encodings/mac_roman.py
+/usr/lib/python3.13/encodings/utf_7.py
+/usr/lib/python3.13/encodings/cp500.py
+/usr/lib/python3.13/encodings/kz1048.py
+/usr/lib/python3.13/encodings/euc_kr.py
+/usr/lib/python3.13/encodings/raw_unicode_escape.py
+/usr/lib/python3.13/encodings/cp864.py
+/usr/lib/python3.13/encodings/cp775.py
+/usr/lib/python3.13/encodings/iso2022_jp_2004.py
+/usr/lib/python3.13/encodings/iso2022_jp_3.py
+/usr/lib/python3.13/encodings/cp856.py
+/usr/lib/python3.13/encodings/big5hkscs.py
+/usr/lib/python3.13/encodings/mbcs.py
+/usr/lib/python3.13/encodings/cp869.py
+/usr/lib/python3.13/encodings/cp850.py
+/usr/lib/python3.13/encodings/mac_greek.py
+/usr/lib/python3.13/encodings/cp720.py
+/usr/lib/python3.13/encodings/latin_1.py
+/usr/lib/python3.13/encodings/euc_jisx0213.py
+/usr/lib/python3.13/encodings/koi8_r.py
+/usr/lib/python3.13/encodings/iso8859_1.py
+/usr/lib/python3.13/encodings/cp949.py
+/usr/lib/python3.13/encodings/cp1140.py
+/usr/lib/python3.13/encodings/cp1125.py
+/usr/lib/python3.13/encodings/palmos.py
+/usr/lib/python3.13/encodings/cp737.py
+/usr/lib/python3.13/encodings/utf_16_be.py
+/usr/lib/python3.13/encodings/iso2022_jp.py
+/usr/lib/python3.13/encodings/cp1255.py
+/usr/lib/python3.13/encodings/iso8859_13.py
+/usr/lib/python3.13/encodings/cp1254.py
+/usr/lib/python3.13/encodings/cp855.py
+/usr/lib/python3.13/encodings/cp860.py
+/usr/lib/python3.13/encodings/cp437.py
+/usr/lib/python3.13/encodings/mac_romanian.py
+/usr/lib/python3.13/encodings/unicode_escape.py
+/usr/lib/python3.13/encodings/iso8859_5.py
+/usr/lib/python3.13/encodings/cp950.py
+/usr/lib/python3.13/encodings/iso8859_11.py
+/usr/lib/python3.13/encodings/tis_620.py
+/usr/lib/python3.13/encodings/euc_jp.py
+/usr/lib/python3.13/encodings/gbk.py
+/usr/lib/python3.13/encodings/gb2312.py
+/usr/lib/python3.13/encodings/cp932.py
+/usr/lib/python3.13/encodings/utf_8_sig.py
+/usr/lib/python3.13/encodings/big5.py
+/usr/lib/python3.13/encodings/shift_jis_2004.py
+/usr/lib/python3.13/encodings/hz.py
+/usr/lib/python3.13/encodings/cp865.py
+/usr/lib/python3.13/encodings/cp1252.py
+/usr/lib/python3.13/encodings/iso2022_jp_ext.py
+/usr/lib/python3.13/encodings/aliases.py
+/usr/lib/python3.13/encodings/quopri_codec.py
+/usr/lib/python3.13/encodings/mac_iceland.py
+/usr/lib/python3.13/encodings/utf_16_le.py
+/usr/lib/python3.13/encodings/iso8859_6.py
+/usr/lib/python3.13/encodings/cp857.py
+/usr/lib/python3.13/encodings/utf_8.py
+/usr/lib/python3.13/encodings/cp866.py
+/usr/lib/python3.13/encodings/iso2022_jp_2.py
+/usr/lib/python3.13/encodings/punycode.py
+/usr/lib/python3.13/encodings/hp_roman8.py
+/usr/lib/python3.13/ctypes/_endian.py
+/usr/lib/python3.13/ctypes/__init__.py
+/usr/lib/python3.13/ctypes/_aix.py
+/usr/lib/python3.13/ctypes/wintypes.py
+/usr/lib/python3.13/ctypes/util.py
+/usr/lib/python3.13/dataclasses.py
+/usr/lib/python3.13/tokenize.py
+/usr/lib/python3.13/codecs.py
+/usr/lib/python3.13/pickletools.py
+/usr/lib/python3.13/_apple_support.py
+/usr/lib/python3.13/socketserver.py
+/usr/lib/python3.13/sre_compile.py
+/usr/lib/python3.13/html/__init__.py
+/usr/lib/python3.13/html/parser.py
+/usr/lib/python3.13/html/entities.py
+/usr/lib/python3.13/http/server.py
+/usr/lib/python3.13/http/__init__.py
+/usr/lib/python3.13/http/cookiejar.py
+/usr/lib/python3.13/http/cookies.py
+/usr/lib/python3.13/http/client.py
+/usr/lib/python3.13/__hello__.py
+/usr/lib/python3.13/tomllib/_parser.py
+/usr/lib/python3.13/tomllib/__init__.py
+/usr/lib/python3.13/tomllib/_re.py
+/usr/lib/python3.13/tomllib/_types.py
+/usr/lib/python3.13/pprint.py
+/usr/lib/python3.13/genericpath.py
+/usr/lib/python3.13/enum.py
+/usr/lib/python3.13/_py_abc.py
+/usr/lib/python3.13/platform.py
+/usr/lib/python3.13/pydoc.py
+/usr/lib/python3.13/symtable.py
+/usr/lib/python3.13/codeop.py
+/usr/lib/python3.13/difflib.py
+/usr/lib/python3.13/contextlib.py
+/usr/lib/python3.13/rlcompleter.py
+/usr/lib/python3.13/signal.py
+/usr/lib/python3.13/zipfile/_path/__init__.py
+/usr/lib/python3.13/zipfile/_path/glob.py
+/usr/lib/python3.13/zipfile/__init__.py
+/usr/lib/python3.13/zipfile/__main__.py
+/usr/lib/python3.13/json/tool.py
+/usr/lib/python3.13/json/decoder.py
+/usr/lib/python3.13/json/__init__.py
+/usr/lib/python3.13/json/scanner.py
+/usr/lib/python3.13/json/encoder.py
+/usr/lib/python3.13/inspect.py
+/usr/lib/x86_64-linux-gnu/totem/plugins/pythonconsole/pythonconsole.py
+/usr/lib/x86_64-linux-gnu/totem/plugins/pythonconsole/console.py
+/usr/lib/x86_64-linux-gnu/totem/plugins/opensubtitles/opensubtitles.py
+/usr/lib/x86_64-linux-gnu/totem/plugins/opensubtitles/hash.py
+/usr/lib/python3/dist-packages/idna/core.py
+/usr/lib/python3/dist-packages/idna/__init__.py
+/usr/lib/python3/dist-packages/idna/package_data.py
+/usr/lib/python3/dist-packages/idna/uts46data.py
+/usr/lib/python3/dist-packages/idna/intranges.py
+/usr/lib/python3/dist-packages/idna/idnadata.py
+/usr/lib/python3/dist-packages/idna/codec.py
+/usr/lib/python3/dist-packages/idna/compat.py
+/usr/lib/python3/dist-packages/cupshelpers/openprinting.py
+/usr/lib/python3/dist-packages/cupshelpers/__init__.py
+/usr/lib/python3/dist-packages/cupshelpers/ppds.py
+/usr/lib/python3/dist-packages/cupshelpers/config.py
+/usr/lib/python3/dist-packages/cupshelpers/xmldriverprefs.py
+/usr/lib/python3/dist-packages/cupshelpers/smburi.py
+/usr/lib/python3/dist-packages/cupshelpers/debug.py
+/usr/lib/python3/dist-packages/cupshelpers/cupshelpers.py
+/usr/lib/python3/dist-packages/cupshelpers/installdriver.py
+/usr/lib/python3/dist-packages/debianbts/version.py
+/usr/lib/python3/dist-packages/debianbts/__init__.py
+/usr/lib/python3/dist-packages/debianbts/__main__.py
+/usr/lib/python3/dist-packages/debianbts/debianbts.py
+/usr/lib/python3/dist-packages/dbus/_dbus.py
+/usr/lib/python3/dist-packages/dbus/connection.py
+/usr/lib/python3/dist-packages/dbus/bus.py
+/usr/lib/python3/dist-packages/dbus/exceptions.py
+/usr/lib/python3/dist-packages/dbus/server.py
+/usr/lib/python3/dist-packages/dbus/decorators.py
+/usr/lib/python3/dist-packages/dbus/__init__.py
+/usr/lib/python3/dist-packages/dbus/types.py
+/usr/lib/python3/dist-packages/dbus/_compat.py
+/usr/lib/python3/dist-packages/dbus/lowlevel.py
+/usr/lib/python3/dist-packages/dbus/mainloop/__init__.py
+/usr/lib/python3/dist-packages/dbus/mainloop/glib.py
+/usr/lib/python3/dist-packages/dbus/service.py
+/usr/lib/python3/dist-packages/dbus/gi_service.py
+/usr/lib/python3/dist-packages/dbus/_expat_introspect_parser.py
+/usr/lib/python3/dist-packages/dbus/proxies.py
+/usr/lib/python3/dist-packages/dbus/glib.py
+/usr/lib/python3/dist-packages/gi/repository/__init__.py
+/usr/lib/python3/dist-packages/gi/_ossighelper.py
+/usr/lib/python3/dist-packages/gi/_error.py
+/usr/lib/python3/dist-packages/gi/__init__.py
+/usr/lib/python3/dist-packages/gi/types.py
+/usr/lib/python3/dist-packages/gi/pygtkcompat.py
+/usr/lib/python3/dist-packages/gi/_propertyhelper.py
+/usr/lib/python3/dist-packages/gi/_gtktemplate.py
+/usr/lib/python3/dist-packages/gi/overrides/GObject.py
+/usr/lib/python3/dist-packages/gi/overrides/Pango.py
+/usr/lib/python3/dist-packages/gi/overrides/__init__.py
+/usr/lib/python3/dist-packages/gi/overrides/GIMarshallingTests.py
+/usr/lib/python3/dist-packages/gi/overrides/GdkPixbuf.py
+/usr/lib/python3/dist-packages/gi/overrides/IBus.py
+/usr/lib/python3/dist-packages/gi/overrides/Gdk.py
+/usr/lib/python3/dist-packages/gi/overrides/Gio.py
+/usr/lib/python3/dist-packages/gi/overrides/keysyms.py
+/usr/lib/python3/dist-packages/gi/overrides/Gtk.py
+/usr/lib/python3/dist-packages/gi/overrides/GLib.py
+/usr/lib/python3/dist-packages/gi/module.py
+/usr/lib/python3/dist-packages/gi/importer.py
+/usr/lib/python3/dist-packages/gi/_constants.py
+/usr/lib/python3/dist-packages/gi/events.py
+/usr/lib/python3/dist-packages/gi/_signalhelper.py
+/usr/lib/python3/dist-packages/gi/_option.py
+/usr/lib/python3/dist-packages/gi/docstring.py
+/usr/lib/python3/dist-packages/urllib3/poolmanager.py
+/usr/lib/python3/dist-packages/urllib3/connection.py
+/usr/lib/python3/dist-packages/urllib3/response.py
+/usr/lib/python3/dist-packages/urllib3/exceptions.py
+/usr/lib/python3/dist-packages/urllib3/__init__.py
+/usr/lib/python3/dist-packages/urllib3/_request_methods.py
+/usr/lib/python3/dist-packages/urllib3/contrib/pyopenssl.py
+/usr/lib/python3/dist-packages/urllib3/contrib/__init__.py
+/usr/lib/python3/dist-packages/urllib3/contrib/emscripten/connection.py
+/usr/lib/python3/dist-packages/urllib3/contrib/emscripten/response.py
+/usr/lib/python3/dist-packages/urllib3/contrib/emscripten/request.py
+/usr/lib/python3/dist-packages/urllib3/contrib/emscripten/__init__.py
+/usr/lib/python3/dist-packages/urllib3/contrib/emscripten/fetch.py
+/usr/lib/python3/dist-packages/urllib3/contrib/socks.py
+/usr/lib/python3/dist-packages/urllib3/_base_connection.py
+/usr/lib/python3/dist-packages/urllib3/_collections.py
+/usr/lib/python3/dist-packages/urllib3/http2/connection.py
+/usr/lib/python3/dist-packages/urllib3/http2/__init__.py
+/usr/lib/python3/dist-packages/urllib3/http2/probe.py
+/usr/lib/python3/dist-packages/urllib3/filepost.py
+/usr/lib/python3/dist-packages/urllib3/_version.py
+/usr/lib/python3/dist-packages/urllib3/connectionpool.py
+/usr/lib/python3/dist-packages/urllib3/fields.py
+/usr/lib/python3/dist-packages/urllib3/util/connection.py
+/usr/lib/python3/dist-packages/urllib3/util/wait.py
+/usr/lib/python3/dist-packages/urllib3/util/response.py
+/usr/lib/python3/dist-packages/urllib3/util/request.py
+/usr/lib/python3/dist-packages/urllib3/util/__init__.py
+/usr/lib/python3/dist-packages/urllib3/util/ssltransport.py
+/usr/lib/python3/dist-packages/urllib3/util/url.py
+/usr/lib/python3/dist-packages/urllib3/util/retry.py
+/usr/lib/python3/dist-packages/urllib3/util/proxy.py
+/usr/lib/python3/dist-packages/urllib3/util/ssl_match_hostname.py
+/usr/lib/python3/dist-packages/urllib3/util/timeout.py
+/usr/lib/python3/dist-packages/urllib3/util/ssl_.py
+/usr/lib/python3/dist-packages/urllib3/util/util.py
+/usr/lib/python3/dist-packages/charset_normalizer/utils.py
+/usr/lib/python3/dist-packages/charset_normalizer/version.py
+/usr/lib/python3/dist-packages/charset_normalizer/cd.py
+/usr/lib/python3/dist-packages/charset_normalizer/md.py
+/usr/lib/python3/dist-packages/charset_normalizer/__init__.py
+/usr/lib/python3/dist-packages/charset_normalizer/legacy.py
+/usr/lib/python3/dist-packages/charset_normalizer/constant.py
+/usr/lib/python3/dist-packages/charset_normalizer/__main__.py
+/usr/lib/python3/dist-packages/charset_normalizer/cli/__init__.py
+/usr/lib/python3/dist-packages/charset_normalizer/cli/__main__.py
+/usr/lib/python3/dist-packages/charset_normalizer/api.py
+/usr/lib/python3/dist-packages/charset_normalizer/models.py
+/usr/lib/python3/dist-packages/reportbug/utils.py
+/usr/lib/python3/dist-packages/reportbug/checkbuildd.py
+/usr/lib/python3/dist-packages/reportbug/hiermatch.py
+/usr/lib/python3/dist-packages/reportbug/exceptions.py
+/usr/lib/python3/dist-packages/reportbug/bugreport.py
+/usr/lib/python3/dist-packages/reportbug/__init__.py
+/usr/lib/python3/dist-packages/reportbug/ui/__init__.py
+/usr/lib/python3/dist-packages/reportbug/ui/text_ui.py
+/usr/lib/python3/dist-packages/reportbug/ui/urwid_ui.py
+/usr/lib/python3/dist-packages/reportbug/ui/gtk_ui.py
+/usr/lib/python3/dist-packages/reportbug/urlutils.py
+/usr/lib/python3/dist-packages/reportbug/submit.py
+/usr/lib/python3/dist-packages/reportbug/debbugs.py
+/usr/lib/python3/dist-packages/reportbug/data.py
+/usr/lib/python3/dist-packages/reportbug/tempfiles.py
+/usr/lib/python3/dist-packages/reportbug/checkversions.py
+/usr/lib/python3/dist-packages/reportbug/mailer.py
+/usr/lib/python3/dist-packages/unohelper.py
+/usr/lib/python3/dist-packages/gtweak/defs.py
+/usr/lib/python3/dist-packages/gtweak/utils.py
+/usr/lib/python3/dist-packages/gtweak/gsettings.py
+/usr/lib/python3/dist-packages/gtweak/tweakmodel.py
+/usr/lib/python3/dist-packages/gtweak/tweaks/tweak_group_appearance.py
+/usr/lib/python3/dist-packages/gtweak/tweaks/__init__.py
+/usr/lib/python3/dist-packages/gtweak/tweaks/tweak_group_mouse.py
+/usr/lib/python3/dist-packages/gtweak/tweaks/tweak_group_startup.py
+/usr/lib/python3/dist-packages/gtweak/tweaks/tweak_group_font.py
+/usr/lib/python3/dist-packages/gtweak/tweaks/tweak_group_windows.py
+/usr/lib/python3/dist-packages/gtweak/tweaks/tweak_group_keyboard.py
+/usr/lib/python3/dist-packages/gtweak/tweaks/tweak_group_sound.py
+/usr/lib/python3/dist-packages/gtweak/gshellwrapper.py
+/usr/lib/python3/dist-packages/gtweak/__init__.py
+/usr/lib/python3/dist-packages/gtweak/widgets.py
+/usr/lib/python3/dist-packages/gtweak/devicemanager.py
+/usr/lib/python3/dist-packages/gtweak/app.py
+/usr/lib/python3/dist-packages/gtweak/tweakview.py
+/usr/lib/python3/dist-packages/gtweak/gtksettings.py
+/usr/lib/python3/dist-packages/debconf.py
+/usr/lib/python3/dist-packages/apt/utils.py
+/usr/lib/python3/dist-packages/apt/debfile.py
+/usr/lib/python3/dist-packages/apt/__init__.py
+/usr/lib/python3/dist-packages/apt/progress/__init__.py
+/usr/lib/python3/dist-packages/apt/progress/base.py
+/usr/lib/python3/dist-packages/apt/progress/text.py
+/usr/lib/python3/dist-packages/apt/package.py
+/usr/lib/python3/dist-packages/apt/cdrom.py
+/usr/lib/python3/dist-packages/apt/cache.py
+/usr/lib/python3/dist-packages/requests/auth.py
+/usr/lib/python3/dist-packages/requests/utils.py
+/usr/lib/python3/dist-packages/requests/_internal_utils.py
+/usr/lib/python3/dist-packages/requests/__version__.py
+/usr/lib/python3/dist-packages/requests/exceptions.py
+/usr/lib/python3/dist-packages/requests/__init__.py
+/usr/lib/python3/dist-packages/requests/help.py
+/usr/lib/python3/dist-packages/requests/adapters.py
+/usr/lib/python3/dist-packages/requests/certs.py
+/usr/lib/python3/dist-packages/requests/status_codes.py
+/usr/lib/python3/dist-packages/requests/hooks.py
+/usr/lib/python3/dist-packages/requests/sessions.py
+/usr/lib/python3/dist-packages/requests/structures.py
+/usr/lib/python3/dist-packages/requests/cookies.py
+/usr/lib/python3/dist-packages/requests/api.py
+/usr/lib/python3/dist-packages/requests/models.py
+/usr/lib/python3/dist-packages/requests/packages.py
+/usr/lib/python3/dist-packages/requests/compat.py
+/usr/lib/python3/dist-packages/louis/__init__.py
+/usr/lib/python3/dist-packages/chardet/euckrprober.py
+/usr/lib/python3/dist-packages/chardet/version.py
+/usr/lib/python3/dist-packages/chardet/mbcharsetprober.py
+/usr/lib/python3/dist-packages/chardet/hebrewprober.py
+/usr/lib/python3/dist-packages/chardet/langbulgarianmodel.py
+/usr/lib/python3/dist-packages/chardet/universaldetector.py
+/usr/lib/python3/dist-packages/chardet/enums.py
+/usr/lib/python3/dist-packages/chardet/utf8prober.py
+/usr/lib/python3/dist-packages/chardet/sbcsgroupprober.py
+/usr/lib/python3/dist-packages/chardet/__init__.py
+/usr/lib/python3/dist-packages/chardet/big5freq.py
+/usr/lib/python3/dist-packages/chardet/chardistribution.py
+/usr/lib/python3/dist-packages/chardet/langhebrewmodel.py
+/usr/lib/python3/dist-packages/chardet/sbcharsetprober.py
+/usr/lib/python3/dist-packages/chardet/mbcsgroupprober.py
+/usr/lib/python3/dist-packages/chardet/utf1632prober.py
+/usr/lib/python3/dist-packages/chardet/mbcssm.py
+/usr/lib/python3/dist-packages/chardet/codingstatemachine.py
+/usr/lib/python3/dist-packages/chardet/charsetgroupprober.py
+/usr/lib/python3/dist-packages/chardet/langthaimodel.py
+/usr/lib/python3/dist-packages/chardet/metadata/__init__.py
+/usr/lib/python3/dist-packages/chardet/metadata/languages.py
+/usr/lib/python3/dist-packages/chardet/charsetprober.py
+/usr/lib/python3/dist-packages/chardet/johabfreq.py
+/usr/lib/python3/dist-packages/chardet/sjisprober.py
+/usr/lib/python3/dist-packages/chardet/__main__.py
+/usr/lib/python3/dist-packages/chardet/cli/chardetect.py
+/usr/lib/python3/dist-packages/chardet/cli/__init__.py
+/usr/lib/python3/dist-packages/chardet/jpcntx.py
+/usr/lib/python3/dist-packages/chardet/euctwfreq.py
+/usr/lib/python3/dist-packages/chardet/escsm.py
+/usr/lib/python3/dist-packages/chardet/gb2312freq.py
+/usr/lib/python3/dist-packages/chardet/jisfreq.py
+/usr/lib/python3/dist-packages/chardet/latin1prober.py
+/usr/lib/python3/dist-packages/chardet/langgreekmodel.py
+/usr/lib/python3/dist-packages/chardet/langrussianmodel.py
+/usr/lib/python3/dist-packages/chardet/langturkishmodel.py
+/usr/lib/python3/dist-packages/chardet/eucjpprober.py
+/usr/lib/python3/dist-packages/chardet/cp949prober.py
+/usr/lib/python3/dist-packages/chardet/euckrfreq.py
+/usr/lib/python3/dist-packages/chardet/johabprober.py
+/usr/lib/python3/dist-packages/chardet/escprober.py
+/usr/lib/python3/dist-packages/chardet/euctwprober.py
+/usr/lib/python3/dist-packages/chardet/big5prober.py
+/usr/lib/python3/dist-packages/chardet/resultdict.py
+/usr/lib/python3/dist-packages/chardet/codingstatemachinedict.py
+/usr/lib/python3/dist-packages/chardet/macromanprober.py
+/usr/lib/python3/dist-packages/chardet/gb2312prober.py
+/usr/lib/python3/dist-packages/chardet/langhungarianmodel.py
+/usr/lib/python3/dist-packages/certifi/core.py
+/usr/lib/python3/dist-packages/certifi/__init__.py
+/usr/lib/python3/dist-packages/certifi/__main__.py
+/usr/lib/python3/dist-packages/speechd_config/__init__.py
+/usr/lib/python3/dist-packages/speechd_config/config.py
+/usr/lib/python3/dist-packages/speechd_config/buildconfig.py
+/usr/lib/python3/dist-packages/psutil/_pssunos.py
+/usr/lib/python3/dist-packages/psutil/_pslinux.py
+/usr/lib/python3/dist-packages/psutil/__init__.py
+/usr/lib/python3/dist-packages/psutil/_pswindows.py
+/usr/lib/python3/dist-packages/psutil/_common.py
+/usr/lib/python3/dist-packages/psutil/_psaix.py
+/usr/lib/python3/dist-packages/psutil/_psosx.py
+/usr/lib/python3/dist-packages/psutil/_psbsd.py
+/usr/lib/python3/dist-packages/psutil/tests/test_linux.py
+/usr/lib/python3/dist-packages/psutil/tests/test_aix.py
+/usr/lib/python3/dist-packages/psutil/tests/test_process.py
+/usr/lib/python3/dist-packages/psutil/tests/test_contracts.py
+/usr/lib/python3/dist-packages/psutil/tests/__init__.py
+/usr/lib/python3/dist-packages/psutil/tests/test_testutils.py
+/usr/lib/python3/dist-packages/psutil/tests/test_osx.py
+/usr/lib/python3/dist-packages/psutil/tests/test_posix.py
+/usr/lib/python3/dist-packages/psutil/tests/test_system.py
+/usr/lib/python3/dist-packages/psutil/tests/__main__.py
+/usr/lib/python3/dist-packages/psutil/tests/test_memleaks.py
+/usr/lib/python3/dist-packages/psutil/tests/test_process_all.py
+/usr/lib/python3/dist-packages/psutil/tests/test_sunos.py
+/usr/lib/python3/dist-packages/psutil/tests/test_bsd.py
+/usr/lib/python3/dist-packages/psutil/tests/test_unicode.py
+/usr/lib/python3/dist-packages/psutil/tests/test_scripts.py
+/usr/lib/python3/dist-packages/psutil/tests/test_windows.py
+/usr/lib/python3/dist-packages/psutil/tests/test_misc.py
+/usr/lib/python3/dist-packages/psutil/tests/test_connections.py
+/usr/lib/python3/dist-packages/psutil/_psposix.py
+/usr/lib/python3/dist-packages/xdg/__init__.py
+/usr/lib/python3/dist-packages/xdg/IniFile.py
+/usr/lib/python3/dist-packages/xdg/Menu.py
+/usr/lib/python3/dist-packages/xdg/IconTheme.py
+/usr/lib/python3/dist-packages/xdg/Locale.py
+/usr/lib/python3/dist-packages/xdg/DesktopEntry.py
+/usr/lib/python3/dist-packages/xdg/Exceptions.py
+/usr/lib/python3/dist-packages/xdg/Mime.py
+/usr/lib/python3/dist-packages/xdg/BaseDirectory.py
+/usr/lib/python3/dist-packages/xdg/MenuEditor.py
+/usr/lib/python3/dist-packages/xdg/util.py
+/usr/lib/python3/dist-packages/xdg/Config.py
+/usr/lib/python3/dist-packages/xdg/RecentFiles.py
+/usr/lib/python3/dist-packages/orca/pronunciation_dict.py
+/usr/lib/python3/dist-packages/orca/debugging_tools_manager.py
+/usr/lib/python3/dist-packages/orca/scripts/terminal/__init__.py
+/usr/lib/python3/dist-packages/orca/scripts/terminal/braille_generator.py
+/usr/lib/python3/dist-packages/orca/scripts/terminal/script.py
+/usr/lib/python3/dist-packages/orca/scripts/terminal/speech_generator.py
+/usr/lib/python3/dist-packages/orca/scripts/terminal/script_utilities.py
+/usr/lib/python3/dist-packages/orca/scripts/web/__init__.py
+/usr/lib/python3/dist-packages/orca/scripts/web/braille_generator.py
+/usr/lib/python3/dist-packages/orca/scripts/web/script.py
+/usr/lib/python3/dist-packages/orca/scripts/web/speech_generator.py
+/usr/lib/python3/dist-packages/orca/scripts/web/script_utilities.py
+/usr/lib/python3/dist-packages/orca/scripts/web/bookmarks.py
+/usr/lib/python3/dist-packages/orca/scripts/__init__.py
+/usr/lib/python3/dist-packages/orca/scripts/toolkits/__init__.py
+/usr/lib/python3/dist-packages/orca/scripts/toolkits/J2SE-access-bridge/__init__.py
+/usr/lib/python3/dist-packages/orca/scripts/toolkits/J2SE-access-bridge/script.py
+/usr/lib/python3/dist-packages/orca/scripts/toolkits/J2SE-access-bridge/speech_generator.py
+/usr/lib/python3/dist-packages/orca/scripts/toolkits/J2SE-access-bridge/script_utilities.py
+/usr/lib/python3/dist-packages/orca/scripts/toolkits/Chromium/__init__.py
+/usr/lib/python3/dist-packages/orca/scripts/toolkits/Chromium/script.py
+/usr/lib/python3/dist-packages/orca/scripts/toolkits/Chromium/script_utilities.py
+/usr/lib/python3/dist-packages/orca/scripts/toolkits/gtk/__init__.py
+/usr/lib/python3/dist-packages/orca/scripts/toolkits/gtk/script.py
+/usr/lib/python3/dist-packages/orca/scripts/toolkits/gtk/script_utilities.py
+/usr/lib/python3/dist-packages/orca/scripts/toolkits/WebKitGTK/__init__.py
+/usr/lib/python3/dist-packages/orca/scripts/toolkits/WebKitGTK/script.py
+/usr/lib/python3/dist-packages/orca/scripts/toolkits/WebKitGTK/script_utilities.py
+/usr/lib/python3/dist-packages/orca/scripts/toolkits/Gecko/__init__.py
+/usr/lib/python3/dist-packages/orca/scripts/toolkits/Gecko/script.py
+/usr/lib/python3/dist-packages/orca/scripts/toolkits/Gecko/script_utilities.py
+/usr/lib/python3/dist-packages/orca/scripts/toolkits/Qt/__init__.py
+/usr/lib/python3/dist-packages/orca/scripts/toolkits/Qt/script.py
+/usr/lib/python3/dist-packages/orca/scripts/toolkits/Qt/script_utilities.py
+/usr/lib/python3/dist-packages/orca/scripts/apps/gajim/__init__.py
+/usr/lib/python3/dist-packages/orca/scripts/apps/gajim/script.py
+/usr/lib/python3/dist-packages/orca/scripts/apps/kwin/__init__.py
+/usr/lib/python3/dist-packages/orca/scripts/apps/kwin/script.py
+/usr/lib/python3/dist-packages/orca/scripts/apps/kwin/script_utilities.py
+/usr/lib/python3/dist-packages/orca/scripts/apps/SeaMonkey/__init__.py
+/usr/lib/python3/dist-packages/orca/scripts/apps/SeaMonkey/script.py
+/usr/lib/python3/dist-packages/orca/scripts/apps/notification-daemon/__init__.py
+/usr/lib/python3/dist-packages/orca/scripts/apps/notification-daemon/script.py
+/usr/lib/python3/dist-packages/orca/scripts/apps/soffice/__init__.py
+/usr/lib/python3/dist-packages/orca/scripts/apps/soffice/spellcheck.py
+/usr/lib/python3/dist-packages/orca/scripts/apps/soffice/braille_generator.py
+/usr/lib/python3/dist-packages/orca/scripts/apps/soffice/script.py
+/usr/lib/python3/dist-packages/orca/scripts/apps/soffice/speech_generator.py
+/usr/lib/python3/dist-packages/orca/scripts/apps/soffice/script_utilities.py
+/usr/lib/python3/dist-packages/orca/scripts/apps/smuxi-frontend-gnome/__init__.py
+/usr/lib/python3/dist-packages/orca/scripts/apps/smuxi-frontend-gnome/script.py
+/usr/lib/python3/dist-packages/orca/scripts/apps/smuxi-frontend-gnome/chat.py
+/usr/lib/python3/dist-packages/orca/scripts/apps/Thunderbird/__init__.py
+/usr/lib/python3/dist-packages/orca/scripts/apps/Thunderbird/spellcheck.py
+/usr/lib/python3/dist-packages/orca/scripts/apps/Thunderbird/script.py
+/usr/lib/python3/dist-packages/orca/scripts/apps/__init__.py
+/usr/lib/python3/dist-packages/orca/scripts/apps/gnome-shell/__init__.py
+/usr/lib/python3/dist-packages/orca/scripts/apps/gnome-shell/script.py
+/usr/lib/python3/dist-packages/orca/scripts/apps/gnome-shell/script_utilities.py
+/usr/lib/python3/dist-packages/orca/scripts/apps/evolution/__init__.py
+/usr/lib/python3/dist-packages/orca/scripts/apps/evolution/braille_generator.py
+/usr/lib/python3/dist-packages/orca/scripts/apps/evolution/script.py
+/usr/lib/python3/dist-packages/orca/scripts/apps/evolution/speech_generator.py
+/usr/lib/python3/dist-packages/orca/scripts/apps/evolution/script_utilities.py
+/usr/lib/python3/dist-packages/orca/scripts/apps/xfwm4/__init__.py
+/usr/lib/python3/dist-packages/orca/scripts/apps/xfwm4/script.py
+/usr/lib/python3/dist-packages/orca/scripts/apps/evince/__init__.py
+/usr/lib/python3/dist-packages/orca/scripts/apps/evince/script.py
+/usr/lib/python3/dist-packages/orca/scripts/apps/gedit/__init__.py
+/usr/lib/python3/dist-packages/orca/scripts/apps/gedit/spellcheck.py
+/usr/lib/python3/dist-packages/orca/scripts/apps/gedit/script.py
+/usr/lib/python3/dist-packages/orca/scripts/apps/pidgin/__init__.py
+/usr/lib/python3/dist-packages/orca/scripts/apps/pidgin/script.py
+/usr/lib/python3/dist-packages/orca/scripts/apps/pidgin/speech_generator.py
+/usr/lib/python3/dist-packages/orca/scripts/apps/pidgin/script_utilities.py
+/usr/lib/python3/dist-packages/orca/scripts/apps/pidgin/chat.py
+/usr/lib/python3/dist-packages/orca/scripts/sleepmode/__init__.py
+/usr/lib/python3/dist-packages/orca/scripts/sleepmode/braille_generator.py
+/usr/lib/python3/dist-packages/orca/scripts/sleepmode/script.py
+/usr/lib/python3/dist-packages/orca/scripts/sleepmode/speech_generator.py
+/usr/lib/python3/dist-packages/orca/scripts/default.py
+/usr/lib/python3/dist-packages/orca/scripts/switcher/__init__.py
+/usr/lib/python3/dist-packages/orca/scripts/switcher/script.py
+/usr/lib/python3/dist-packages/orca/scripts/switcher/script_utilities.py
+/usr/lib/python3/dist-packages/orca/ax_collection.py
+/usr/lib/python3/dist-packages/orca/brltablenames.py
+/usr/lib/python3/dist-packages/orca/event_manager.py
+/usr/lib/python3/dist-packages/orca/ax_hypertext.py
+/usr/lib/python3/dist-packages/orca/ax_utilities_collection.py
+/usr/lib/python3/dist-packages/orca/guilabels.py
+/usr/lib/python3/dist-packages/orca/ssml.py
+/usr/lib/python3/dist-packages/orca/ax_value.py
+/usr/lib/python3/dist-packages/orca/ax_utilities_relation.py
+/usr/lib/python3/dist-packages/orca/ax_utilities.py
+/usr/lib/python3/dist-packages/orca/spiel.py
+/usr/lib/python3/dist-packages/orca/structural_navigation.py
+/usr/lib/python3/dist-packages/orca/text_attribute_names.py
+/usr/lib/python3/dist-packages/orca/__init__.py
+/usr/lib/python3/dist-packages/orca/spellcheck.py
+/usr/lib/python3/dist-packages/orca/sound.py
+/usr/lib/python3/dist-packages/orca/orca_modifier_manager.py
+/usr/lib/python3/dist-packages/orca/messages.py
+/usr/lib/python3/dist-packages/orca/focus_manager.py
+/usr/lib/python3/dist-packages/orca/where_am_i_presenter.py
+/usr/lib/python3/dist-packages/orca/braille_generator.py
+/usr/lib/python3/dist-packages/orca/learn_mode_presenter.py
+/usr/lib/python3/dist-packages/orca/orca.py
+/usr/lib/python3/dist-packages/orca/action_presenter.py
+/usr/lib/python3/dist-packages/orca/speech_and_verbosity_manager.py
+/usr/lib/python3/dist-packages/orca/braille_rolenames.py
+/usr/lib/python3/dist-packages/orca/settings.py
+/usr/lib/python3/dist-packages/orca/notification_presenter.py
+/usr/lib/python3/dist-packages/orca/keybindings.py
+/usr/lib/python3/dist-packages/orca/flat_review_presenter.py
+/usr/lib/python3/dist-packages/orca/ax_text.py
+/usr/lib/python3/dist-packages/orca/table_navigator.py
+/usr/lib/python3/dist-packages/orca/input_event_manager.py
+/usr/lib/python3/dist-packages/orca/keynames.py
+/usr/lib/python3/dist-packages/orca/object_navigator.py
+/usr/lib/python3/dist-packages/orca/orca_platform.py
+/usr/lib/python3/dist-packages/orca/debug.py
+/usr/lib/python3/dist-packages/orca/settings_manager.py
+/usr/lib/python3/dist-packages/orca/ax_table.py
+/usr/lib/python3/dist-packages/orca/orca_gui_profile.py
+/usr/lib/python3/dist-packages/orca/phonnames.py
+/usr/lib/python3/dist-packages/orca/orca_gtkbuilder.py
+/usr/lib/python3/dist-packages/orca/script.py
+/usr/lib/python3/dist-packages/orca/backends/__init__.py
+/usr/lib/python3/dist-packages/orca/backends/json_backend.py
+/usr/lib/python3/dist-packages/orca/clipboard.py
+/usr/lib/python3/dist-packages/orca/object_properties.py
+/usr/lib/python3/dist-packages/orca/flat_review_finder.py
+/usr/lib/python3/dist-packages/orca/ax_component.py
+/usr/lib/python3/dist-packages/orca/speech.py
+/usr/lib/python3/dist-packages/orca/flat_review.py
+/usr/lib/python3/dist-packages/orca/caret_navigation.py
+/usr/lib/python3/dist-packages/orca/speechdispatcherfactory.py
+/usr/lib/python3/dist-packages/orca/orca_gui_prefs.py
+/usr/lib/python3/dist-packages/orca/system_information_presenter.py
+/usr/lib/python3/dist-packages/orca/speechserver.py
+/usr/lib/python3/dist-packages/orca/ax_object.py
+/usr/lib/python3/dist-packages/orca/ax_utilities_event.py
+/usr/lib/python3/dist-packages/orca/ax_utilities_state.py
+/usr/lib/python3/dist-packages/orca/liveregions.py
+/usr/lib/python3/dist-packages/orca/speech_generator.py
+/usr/lib/python3/dist-packages/orca/script_utilities.py
+/usr/lib/python3/dist-packages/orca/ax_utilities_debugging.py
+/usr/lib/python3/dist-packages/orca/chat.py
+/usr/lib/python3/dist-packages/orca/ax_utilities_role.py
+/usr/lib/python3/dist-packages/orca/mouse_review.py
+/usr/lib/python3/dist-packages/orca/brlmon.py
+/usr/lib/python3/dist-packages/orca/input_event.py
+/usr/lib/python3/dist-packages/orca/highlighter.py
+/usr/lib/python3/dist-packages/orca/mathsymbols.py
+/usr/lib/python3/dist-packages/orca/acss.py
+/usr/lib/python3/dist-packages/orca/bookmarks.py
+/usr/lib/python3/dist-packages/orca/cmdnames.py
+/usr/lib/python3/dist-packages/orca/bypass_mode_manager.py
+/usr/lib/python3/dist-packages/orca/ax_utilities_application.py
+/usr/lib/python3/dist-packages/orca/script_manager.py
+/usr/lib/python3/dist-packages/orca/ax_event_synthesizer.py
+/usr/lib/python3/dist-packages/orca/sleep_mode_manager.py
+/usr/lib/python3/dist-packages/orca/orca_i18n.py
+/usr/lib/python3/dist-packages/orca/generator.py
+/usr/lib/python3/dist-packages/orca/ax_selection.py
+/usr/lib/python3/dist-packages/orca/ax_document.py
+/usr/lib/python3/dist-packages/orca/sound_generator.py
+/usr/lib/python3/dist-packages/orca/braille.py
+/usr/lib/python3/dist-packages/orca/colornames.py
+/usr/lib/python3/dist-packages/orca/orca_gui_navlist.py
+/usr/lib/python3/dist-packages/orca/label_inference.py
+/usr/lib/python3/dist-packages/gnomemusic/corealbum.py
+/usr/lib/python3/dist-packages/gnomemusic/utils.py
+/usr/lib/python3/dist-packages/gnomemusic/application.py
+/usr/lib/python3/dist-packages/gnomemusic/playlisttoast.py
+/usr/lib/python3/dist-packages/gnomemusic/songart.py
+/usr/lib/python3/dist-packages/gnomemusic/songtoast.py
+/usr/lib/python3/dist-packages/gnomemusic/widgets/songwidget.py
+/usr/lib/python3/dist-packages/gnomemusic/widgets/albumssearchnavigationpage.py
+/usr/lib/python3/dist-packages/gnomemusic/widgets/artistalbumswidget.py
+/usr/lib/python3/dist-packages/gnomemusic/widgets/playlistswidget.py
+/usr/lib/python3/dist-packages/gnomemusic/widgets/playlistcontrols.py
+/usr/lib/python3/dist-packages/gnomemusic/widgets/startoggle.py
+/usr/lib/python3/dist-packages/gnomemusic/widgets/albumtile.py
+/usr/lib/python3/dist-packages/gnomemusic/widgets/__init__.py
+/usr/lib/python3/dist-packages/gnomemusic/widgets/artistsearchtile.py
+/usr/lib/python3/dist-packages/gnomemusic/widgets/playlisttile.py
+/usr/lib/python3/dist-packages/gnomemusic/widgets/preferencesdialog.py
+/usr/lib/python3/dist-packages/gnomemusic/widgets/statusnavigationpage.py
+/usr/lib/python3/dist-packages/gnomemusic/widgets/searchheaderbar.py
+/usr/lib/python3/dist-packages/gnomemusic/widgets/artisttile.py
+/usr/lib/python3/dist-packages/gnomemusic/widgets/discbox.py
+/usr/lib/python3/dist-packages/gnomemusic/widgets/albumcover.py
+/usr/lib/python3/dist-packages/gnomemusic/widgets/smoothscale.py
+/usr/lib/python3/dist-packages/gnomemusic/widgets/twolinetip.py
+/usr/lib/python3/dist-packages/gnomemusic/widgets/albumwidget.py
+/usr/lib/python3/dist-packages/gnomemusic/widgets/playertoolbar.py
+/usr/lib/python3/dist-packages/gnomemusic/widgets/artistssearchnavigationpage.py
+/usr/lib/python3/dist-packages/gnomemusic/widgets/headerbar.py
+/usr/lib/python3/dist-packages/gnomemusic/widgets/artistnavigationpage.py
+/usr/lib/python3/dist-packages/gnomemusic/widgets/albumnavigationpage.py
+/usr/lib/python3/dist-packages/gnomemusic/widgets/playlistdialog.py
+/usr/lib/python3/dist-packages/gnomemusic/widgets/playlistdialogrow.py
+/usr/lib/python3/dist-packages/gnomemusic/widgets/songwidgetmenu.py
+/usr/lib/python3/dist-packages/gnomemusic/asynciolimiter.py
+/usr/lib/python3/dist-packages/gnomemusic/inhibitsuspend.py
+/usr/lib/python3/dist-packages/gnomemusic/__init__.py
+/usr/lib/python3/dist-packages/gnomemusic/windowplacement.py
+/usr/lib/python3/dist-packages/gnomemusic/gstplayer.py
+/usr/lib/python3/dist-packages/gnomemusic/texturecache.py
+/usr/lib/python3/dist-packages/gnomemusic/coresong.py
+/usr/lib/python3/dist-packages/gnomemusic/grilowrappers/playlist.py
+/usr/lib/python3/dist-packages/gnomemusic/grilowrappers/smartplaylist.py
+/usr/lib/python3/dist-packages/gnomemusic/grilowrappers/grltrackerwrapper.py
+/usr/lib/python3/dist-packages/gnomemusic/grilowrappers/__init__.py
+/usr/lib/python3/dist-packages/gnomemusic/grilowrappers/grltrackerplaylists.py
+/usr/lib/python3/dist-packages/gnomemusic/grilowrappers/grlsearchwrapper.py
+/usr/lib/python3/dist-packages/gnomemusic/storeart.py
+/usr/lib/python3/dist-packages/gnomemusic/notificationmanager.py
+/usr/lib/python3/dist-packages/gnomemusic/albumart.py
+/usr/lib/python3/dist-packages/gnomemusic/search.py
+/usr/lib/python3/dist-packages/gnomemusic/coreartist.py
+/usr/lib/python3/dist-packages/gnomemusic/coremodel.py
+/usr/lib/python3/dist-packages/gnomemusic/about.py
+/usr/lib/python3/dist-packages/gnomemusic/coregrilo.py
+/usr/lib/python3/dist-packages/gnomemusic/trackerwrapper.py
+/usr/lib/python3/dist-packages/gnomemusic/musiclogger.py
+/usr/lib/python3/dist-packages/gnomemusic/coverpaintable.py
+/usr/lib/python3/dist-packages/gnomemusic/artistart.py
+/usr/lib/python3/dist-packages/gnomemusic/player.py
+/usr/lib/python3/dist-packages/gnomemusic/coredisc.py
+/usr/lib/python3/dist-packages/gnomemusic/embeddedart.py
+/usr/lib/python3/dist-packages/gnomemusic/mpris.py
+/usr/lib/python3/dist-packages/gnomemusic/window.py
+/usr/lib/python3/dist-packages/gnomemusic/mediaartloader.py
+/usr/lib/python3/dist-packages/gnomemusic/pauseonsuspend.py
+/usr/lib/python3/dist-packages/gnomemusic/views/albumsview.py
+/usr/lib/python3/dist-packages/gnomemusic/views/__init__.py
+/usr/lib/python3/dist-packages/gnomemusic/views/playlistsview.py
+/usr/lib/python3/dist-packages/gnomemusic/views/artistsview.py
+/usr/lib/python3/dist-packages/gnomemusic/views/searchview.py
+/usr/lib/python3/dist-packages/ufw/common.py
+/usr/lib/python3/dist-packages/ufw/__init__.py
+/usr/lib/python3/dist-packages/ufw/backend.py
+/usr/lib/python3/dist-packages/ufw/applications.py
+/usr/lib/python3/dist-packages/ufw/parser.py
+/usr/lib/python3/dist-packages/ufw/frontend.py
+/usr/lib/python3/dist-packages/ufw/util.py
+/usr/lib/python3/dist-packages/ufw/backend_iptables.py
+/usr/lib/python3/dist-packages/distro/distro.py
+/usr/lib/python3/dist-packages/distro/__init__.py
+/usr/lib/python3/dist-packages/distro/__main__.py
+/usr/lib/python3/dist-packages/apt_listchanges/__init__.py
+/usr/lib/python3/dist-packages/apt_listchanges/apt_listchanges.py
+/usr/lib/python3/dist-packages/apt_listchanges/debconf_helper.py
+/usr/lib/python3/dist-packages/apt_listchanges/ALCSeenDb.py
+/usr/lib/python3/dist-packages/apt_listchanges/AptListChangesGtk.py
+/usr/lib/python3/dist-packages/apt_listchanges/populate_database.py
+/usr/lib/python3/dist-packages/apt_listchanges/snapshot.py
+/usr/lib/python3/dist-packages/apt_listchanges/ALCLog.py
+/usr/lib/python3/dist-packages/apt_listchanges/DebianFiles.py
+/usr/lib/python3/dist-packages/apt_listchanges/ALCConfig.py
+/usr/lib/python3/dist-packages/apt_listchanges/ALCApt.py
+/usr/lib/python3/dist-packages/apt_listchanges/ALChacks.py
+/usr/lib/python3/dist-packages/apt_listchanges/frontends.py
+/usr/lib/python3/dist-packages/pygtkcompat/__init__.py
+/usr/lib/python3/dist-packages/pygtkcompat/pygtkcompat.py
+/usr/lib/python3/dist-packages/pygtkcompat/generictreemodel.py
+/usr/lib/python3/dist-packages/gnome_browser_connector/application.py
+/usr/lib/python3/dist-packages/gnome_browser_connector/version.py
+/usr/lib/python3/dist-packages/gnome_browser_connector/main.py
+/usr/lib/python3/dist-packages/gnome_browser_connector/__init__.py
+/usr/lib/python3/dist-packages/gnome_browser_connector/connector.py
+/usr/lib/python3/dist-packages/gnome_browser_connector/base.py
+/usr/lib/python3/dist-packages/gnome_browser_connector/constants.py
+/usr/lib/python3/dist-packages/gnome_browser_connector/logs.py
+/usr/lib/python3/dist-packages/gnome_browser_connector/service.py
+/usr/lib/python3/dist-packages/gnome_browser_connector/helpers.py
+/usr/lib/python3/dist-packages/speechd/__init__.py
+/usr/lib/python3/dist-packages/speechd/paths.py
+/usr/lib/python3/dist-packages/speechd/_test.py
+/usr/lib/python3/dist-packages/speechd/client.py
+/usr/lib/python3/dist-packages/setproctitle/__init__.py
+/usr/lib/python3/dist-packages/uno.py
+/usr/lib/python3/dist-packages/aptsources/distro.py
+/usr/lib/python3/dist-packages/aptsources/__init__.py
+/usr/lib/python3/dist-packages/aptsources/distinfo.py
+/usr/lib/python3/dist-packages/aptsources/sourceslist.py
+/usr/lib/python3/dist-packages/aptsources/_deb822.py
+/usr/lib/python3/dist-packages/debian/debfile.py
+/usr/lib/python3/dist-packages/debian/__init__.py
+/usr/lib/python3/dist-packages/debian/_deb822_repro/tokens.py
+/usr/lib/python3/dist-packages/debian/_deb822_repro/formatter.py
+/usr/lib/python3/dist-packages/debian/_deb822_repro/__init__.py
+/usr/lib/python3/dist-packages/debian/_deb822_repro/parsing.py
+/usr/lib/python3/dist-packages/debian/_deb822_repro/types.py
+/usr/lib/python3/dist-packages/debian/_deb822_repro/locatable.py
+/usr/lib/python3/dist-packages/debian/_deb822_repro/_util.py
+/usr/lib/python3/dist-packages/debian/copyright.py
+/usr/lib/python3/dist-packages/debian/_util.py
+/usr/lib/python3/dist-packages/debian/debtags.py
+/usr/lib/python3/dist-packages/debian/debian_support.py
+/usr/lib/python3/dist-packages/debian/_arch_table.py
+/usr/lib/python3/dist-packages/debian/watch.py
+/usr/lib/python3/dist-packages/debian/_version.py
+/usr/lib/python3/dist-packages/debian/substvars.py
+/usr/lib/python3/dist-packages/debian/changelog.py
+/usr/lib/python3/dist-packages/debian/deb822.py
+/usr/lib/python3/dist-packages/debian/arfile.py
+/usr/lib/python3/dist-packages/cairo/__init__.py
+/usr/lib/python3/dist-packages/smbc/__init__.py
+/usr/lib/python3/dist-packages/smbc/xattr.py
+/usr/lib/libreoffice/program/msgbox.py
+/usr/lib/libreoffice/program/wizards/letter/LetterDocument.py
+/usr/lib/libreoffice/program/wizards/letter/__init__.py
+/usr/lib/libreoffice/program/wizards/letter/CallWizard.py
+/usr/lib/libreoffice/program/wizards/letter/LetterWizardDialogResources.py
+/usr/lib/libreoffice/program/wizards/letter/CGLetterWizard.py
+/usr/lib/libreoffice/program/wizards/letter/CGPaperElementLocation.py
+/usr/lib/libreoffice/program/wizards/letter/LetterWizardDialogConst.py
+/usr/lib/libreoffice/program/wizards/letter/LetterWizardDialog.py
+/usr/lib/libreoffice/program/wizards/letter/CGLetter.py
+/usr/lib/libreoffice/program/wizards/letter/LetterWizardDialogImpl.py
+/usr/lib/libreoffice/program/wizards/text/__init__.py
+/usr/lib/libreoffice/program/wizards/text/TextSectionHandler.py
+/usr/lib/libreoffice/program/wizards/text/TextDocument.py
+/usr/lib/libreoffice/program/wizards/text/TextFieldHandler.py
+/usr/lib/libreoffice/program/wizards/text/TextElement.py
+/usr/lib/libreoffice/program/wizards/__init__.py
+/usr/lib/libreoffice/program/wizards/ui/ControlScroller.py
+/usr/lib/libreoffice/program/wizards/ui/PeerConfig.py
+/usr/lib/libreoffice/program/wizards/ui/WizardDialog.py
+/usr/lib/libreoffice/program/wizards/ui/__init__.py
+/usr/lib/libreoffice/program/wizards/ui/DocumentPreview.py
+/usr/lib/libreoffice/program/wizards/ui/PathSelection.py
+/usr/lib/libreoffice/program/wizards/ui/UnoDialog.py
+/usr/lib/libreoffice/program/wizards/ui/UnoDialog2.py
+/usr/lib/libreoffice/program/wizards/ui/event/RadioDataAware.py
+/usr/lib/libreoffice/program/wizards/ui/event/DataAware.py
+/usr/lib/libreoffice/program/wizards/ui/event/__init__.py
+/usr/lib/libreoffice/program/wizards/ui/event/ListModelBinder.py
+/usr/lib/libreoffice/program/wizards/ui/event/EventListenerList.py
+/usr/lib/libreoffice/program/wizards/ui/event/Task.py
+/usr/lib/libreoffice/program/wizards/ui/event/TaskListener.py
+/usr/lib/libreoffice/program/wizards/ui/event/CommonListener.py
+/usr/lib/libreoffice/program/wizards/ui/event/TaskEvent.py
+/usr/lib/libreoffice/program/wizards/ui/event/UnoDataAware.py
+/usr/lib/libreoffice/program/wizards/ui/UIConsts.py
+/usr/lib/libreoffice/program/wizards/document/__init__.py
+/usr/lib/libreoffice/program/wizards/document/OfficeDocument.py
+/usr/lib/libreoffice/program/wizards/agenda/TemplateConsts.py
+/usr/lib/libreoffice/program/wizards/agenda/AgendaWizardDialogImpl.py
+/usr/lib/libreoffice/program/wizards/agenda/AgendaWizardDialog.py
+/usr/lib/libreoffice/program/wizards/agenda/__init__.py
+/usr/lib/libreoffice/program/wizards/agenda/AgendaDocument.py
+/usr/lib/libreoffice/program/wizards/agenda/CallWizard.py
+/usr/lib/libreoffice/program/wizards/agenda/TopicsControl.py
+/usr/lib/libreoffice/program/wizards/agenda/AgendaWizardDialogResources.py
+/usr/lib/libreoffice/program/wizards/agenda/CGTopic.py
+/usr/lib/libreoffice/program/wizards/agenda/AgendaWizardDialogConst.py
+/usr/lib/libreoffice/program/wizards/agenda/CGAgenda.py
+/usr/lib/libreoffice/program/wizards/fax/CGFaxWizard.py
+/usr/lib/libreoffice/program/wizards/fax/__init__.py
+/usr/lib/libreoffice/program/wizards/fax/CallWizard.py
+/usr/lib/libreoffice/program/wizards/fax/FaxWizardDialogResources.py
+/usr/lib/libreoffice/program/wizards/fax/CGFax.py
+/usr/lib/libreoffice/program/wizards/fax/FaxWizardDialog.py
+/usr/lib/libreoffice/program/wizards/fax/FaxDocument.py
+/usr/lib/libreoffice/program/wizards/fax/FaxWizardDialogConst.py
+/usr/lib/libreoffice/program/wizards/fax/FaxWizardDialogImpl.py
+/usr/lib/libreoffice/program/wizards/common/IRenderer.py
+/usr/lib/libreoffice/program/wizards/common/NumberFormatter.py
+/usr/lib/libreoffice/program/wizards/common/__init__.py
+/usr/lib/libreoffice/program/wizards/common/FileAccess.py
+/usr/lib/libreoffice/program/wizards/common/SystemDialog.py
+/usr/lib/libreoffice/program/wizards/common/UCB.py
+/usr/lib/libreoffice/program/wizards/common/NoValidPathException.py
+/usr/lib/libreoffice/program/wizards/common/PropertyNames.py
+/usr/lib/libreoffice/program/wizards/common/Desktop.py
+/usr/lib/libreoffice/program/wizards/common/HelpIds.py
+/usr/lib/libreoffice/program/wizards/common/Configuration.py
+/usr/lib/libreoffice/program/wizards/common/ConfigSet.py
+/usr/lib/libreoffice/program/wizards/common/ConfigGroup.py
+/usr/lib/libreoffice/program/wizards/common/ListModel.py
+/usr/lib/libreoffice/program/wizards/common/Properties.py
+/usr/lib/libreoffice/program/pythonloader.py
+/usr/lib/libreoffice/program/officehelper.py
+/usr/lib/libreoffice/program/mailmerge.py
+/usr/lib/libreoffice/share/Scripts/python/InsertText.py
+/usr/lib/libreoffice/share/Scripts/python/Capitalise.py
+/usr/lib/libreoffice/share/Scripts/python/SetCellColor.py
+/usr/lib/libreoffice/share/Scripts/python/HelloWorld.py
+/usr/lib/libreoffice/share/Scripts/python/TableSample.py
+/usr/lib/libreoffice/share/Scripts/python/NamedRanges.py
+/usr/lib/libreoffice/share/Scripts/python/ScriptForgeHelper.py
+/usr/bin/mesa-overlay-control.py
+/usr/share/bash-completion/completions/btdownloadheadless.py
+/usr/share/system-config-printer/pysmb.py
+/usr/share/system-config-printer/installpackage.py
+/usr/share/system-config-printer/cupspk.py
+/usr/share/system-config-printer/monitor.py
+/usr/share/system-config-printer/authconn.py
+/usr/share/system-config-printer/statereason.py
+/usr/share/system-config-printer/PhysicalDevice.py
+/usr/share/system-config-printer/asyncpk1.py
+/usr/share/system-config-printer/asyncconn.py
+/usr/share/system-config-printer/killtimer.py
+/usr/share/system-config-printer/asyncipp.py
+/usr/share/system-config-printer/config.py
+/usr/share/system-config-printer/ppdcache.py
+/usr/share/system-config-printer/gui.py
+/usr/share/system-config-printer/dnssdresolve.py
+/usr/share/system-config-printer/options.py
+/usr/share/system-config-printer/printerproperties.py
+/usr/share/system-config-printer/smburi.py
+/usr/share/system-config-printer/scp-dbus-service.py
+/usr/share/system-config-printer/probe_printer.py
+/usr/share/system-config-printer/debug.py
+/usr/share/system-config-printer/timedops.py
+/usr/share/system-config-printer/ppdsloader.py
+/usr/share/system-config-printer/jobviewer.py
+/usr/share/system-config-printer/optionwidgets.py
+/usr/share/system-config-printer/gtkinklevel.py
+/usr/share/system-config-printer/newprinter.py
+/usr/share/system-config-printer/OpenPrintingRequest.py
+/usr/share/system-config-printer/ppdippstr.py
+/usr/share/system-config-printer/firewallsettings.py
+/usr/share/system-config-printer/errordialogs.py
+/usr/share/doc/python3-uno/demo/hello_world_comp.py
+/usr/share/doc/python3-uno/demo/biblioaccess.py
+/usr/share/doc/python3-uno/demo/swritercompclient.py
+/usr/share/doc/python3-uno/demo/swritercomp.py
+/usr/share/doc/python3-uno/demo/ooextract.py
+/usr/share/doc/python3-uno/demo/swriter.py
+/usr/share/doc/bubblewrap/examples/userns-block-fd.py
+/usr/share/doc/python3-debian/examples/copyright/check_parse_and_dump.py
+/usr/share/doc/python3-debian/examples/deb822/grep_native_packages.py
+/usr/share/doc/git/contrib/fast-import/import-zips.py
+/usr/share/doc/python3-psutil/examples/pstree.py
+/usr/share/doc/python3-psutil/examples/free.py
+/usr/share/doc/python3-psutil/examples/netstat.py
+/usr/share/doc/python3-psutil/examples/battery.py
+/usr/share/doc/python3-psutil/examples/killall.py
+/usr/share/doc/python3-psutil/examples/internal/download_wheels.py
+/usr/share/doc/python3-psutil/examples/internal/print_timeline.py
+/usr/share/doc/python3-psutil/examples/internal/generate_manifest.py
+/usr/share/doc/python3-psutil/examples/internal/clinter.py
+/usr/share/doc/python3-psutil/examples/internal/bench_oneshot.py
+/usr/share/doc/python3-psutil/examples/internal/print_hashes.py
+/usr/share/doc/python3-psutil/examples/internal/bench_oneshot_2.py
+/usr/share/doc/python3-psutil/examples/internal/print_dist.py
+/usr/share/doc/python3-psutil/examples/internal/print_api_speed.py
+/usr/share/doc/python3-psutil/examples/internal/print_downloads.py
+/usr/share/doc/python3-psutil/examples/internal/test_python2_setup_py.py
+/usr/share/doc/python3-psutil/examples/internal/install_pip.py
+/usr/share/doc/python3-psutil/examples/internal/purge_installation.py
+/usr/share/doc/python3-psutil/examples/internal/convert_readme.py
+/usr/share/doc/python3-psutil/examples/internal/check_broken_links.py
+/usr/share/doc/python3-psutil/examples/internal/git_pre_commit.py
+/usr/share/doc/python3-psutil/examples/internal/winmake.py
+/usr/share/doc/python3-psutil/examples/internal/print_announce.py
+/usr/share/doc/python3-psutil/examples/internal/print_access_denied.py
+/usr/share/doc/python3-psutil/examples/pmap.py
+/usr/share/doc/python3-psutil/examples/fans.py
+/usr/share/doc/python3-psutil/examples/ps.py
+/usr/share/doc/python3-psutil/examples/temperatures.py
+/usr/share/doc/python3-psutil/examples/meminfo.py
+/usr/share/doc/python3-psutil/examples/sensors.py
+/usr/share/doc/python3-psutil/examples/who.py
+/usr/share/doc/python3-psutil/examples/iotop.py
+/usr/share/doc/python3-psutil/examples/procinfo.py
+/usr/share/doc/python3-psutil/examples/ifconfig.py
+/usr/share/doc/python3-psutil/examples/winservices.py
+/usr/share/doc/python3-psutil/examples/cpu_distribution.py
+/usr/share/doc/python3-psutil/examples/top.py
+/usr/share/doc/python3-psutil/examples/nettop.py
+/usr/share/doc/python3-psutil/examples/procsmem.py
+/usr/share/doc/python3-psutil/examples/pidof.py
+/usr/share/doc/python3-psutil/examples/disk_usage.py
+/usr/share/doc/libdee-1.0-4/examples/pythontricks.py
+/usr/share/doc/libdee-1.0-4/examples/slave-model.py
+/usr/share/doc/libdee-1.0-4/examples/master-model.py
+/usr/share/apport/package-hooks/source_cups.py
+/usr/share/apport/package-hooks/source_totem.py
+/usr/share/apport/package-hooks/source_grub2.py
+/usr/share/apport/package-hooks/source_gnome-software.py
+/usr/share/apport/package-hooks/source_mtdev.py
+/usr/share/apport/package-hooks/shotwell.py
+/usr/share/apport/package-hooks/source_gnome-shell.py
+/usr/share/apport/package-hooks/openssh-client.py
+/usr/share/apport/package-hooks/source_simple-scan.py
+/usr/share/apport/package-hooks/source_sudo.py
+/usr/share/apport/package-hooks/source_yelp.py
+/usr/share/apport/package-hooks/source_bluez.py
+/usr/share/apport/package-hooks/source_plymouth.py
+/usr/share/apport/package-hooks/source_evince.py
+/usr/share/apport/package-hooks/source_apparmor.py
+/usr/share/apport/package-hooks/source_libmtp.py
+/usr/share/python3/debpython/version.py
+/usr/share/python3/debpython/__init__.py
+/usr/share/python3/debpython/files.py
+/usr/share/python3/debpython/interpreter.py
+/usr/share/python3/debpython/option.py
+/usr/share/python3/py3versions.py
+/usr/share/gdb/auto-load/usr/lib/x86_64-linux-gnu/libisl.so.23.4.0-gdb.py
+/usr/share/gdb/auto-load/usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.33-gdb.py
+/usr/share/gcc/python/libstdcxx/__init__.py
+/usr/share/gcc/python/libstdcxx/v6/__init__.py
+/usr/share/gcc/python/libstdcxx/v6/printers.py
+/usr/share/gcc/python/libstdcxx/v6/xmethods.py
+/usr/share/fwupd/install_dell_bios_exe.py
+/usr/share/fwupd/simple_client.py
+/usr/share/fwupd/firmware_packager.py
+/usr/share/fwupd/add_capsule_header.py
+/usr/share/ibus/setup/main.py
+/usr/share/ibus/setup/enginetreeview.py
+/usr/share/ibus/setup/engineabout.py
+/usr/share/ibus/setup/enginedialog.py
+/usr/share/ibus/setup/enginecombobox.py
+/usr/share/ibus/setup/emojilang.py
+/usr/share/ibus/setup/icon.py
+/usr/share/ibus/setup/i18n.py
+/usr/share/ibus/setup/keyboardshortcut.py
+/opt/sublime_text/Lib/python38/sublime.py
+/opt/sublime_text/Lib/python38/sublime_plugin.py
+/opt/sublime_text/Lib/python38/sublime_types.py
+/opt/sublime_text/Lib/python3/certifi/core.py
+/opt/sublime_text/Lib/python3/certifi/__init__.py
+/opt/sublime_text/Lib/python3/certifi/__main__.py
+/opt/sublime_text/Lib/python33/sublime.py
+/opt/sublime_text/Lib/python33/sublime_plugin.py
+[+] Checking cron jobs
+total 40
+drwxr-xr-x   2 root root  4096 Sep 24 10:38 .
+drwxr-xr-x 123 root root 12288 Dec 12 10:14 ..
+-rwxr-xr-x   1 root root   311 Apr 23  2025 0anacron
+-rwxr-xr-x   1 root root  1478 Jun 24 12:02 apt-compat
+-rwxr-xr-x   1 root root   123 May 27  2025 dpkg
+-rwxr-xr-x   1 root root   377 Jul 14  2024 logrotate
+-rwxr-xr-x   1 root root  1395 May  2  2025 man-db
+-rw-r--r--   1 root root   102 Jun 13 03:30 .placeholder
+total 20
+drwxr-xr-x   2 root root  4096 Sep 24 10:34 .
+drwxr-xr-x 123 root root 12288 Dec 12 10:14 ..
+-rw-r--r--   1 root root   102 Jun 13 03:30 .placeholder
+total 28
+drwxr-xr-x   2 root root  4096 Sep 24 10:38 .
+drwxr-xr-x 123 root root 12288 Dec 12 10:14 ..
+-rwxr-xr-x   1 root root   312 Apr 23  2025 0anacron
+-rwxr-xr-x   1 root root  1055 May  2  2025 man-db
+-rw-r--r--   1 root root   102 Jun 13 03:30 .placeholder
+[+] Updating package lists and installed programs
